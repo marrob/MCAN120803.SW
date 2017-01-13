@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+<mcanxProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.konvolucio.hu/mcanx/2016/project/content">
+  <Version>1.0.0.0</Version>
+  <Settings>
+    <ProductName>0009</ProductName>
+    <ProductVersion>na</ProductVersion>
+    <ProductCode>na</ProductCode>
+    <CustomerName>na</CustomerName>
+    <CustomerCode>na</CustomerCode>
+    <Comment />
+    <DeviceName />
+    <Baudrate>125.000kBaud</Baudrate>
+    <Loopback>false</Loopback>
+    <Termination>true</Termination>
+    <ListenOnly>false</ListenOnly>
+    <NonAutoReTx>false</NonAutoReTx>
+    <FiltersEnabled>false</FiltersEnabled>
+    <LogEnabled>false</LogEnabled>
+    <TraceEnabled>true</TraceEnabled>
+    <PlayHistoryClearEnabled>true</PlayHistoryClearEnabled>
+    <AdapterStatisticsEnabled>true</AdapterStatisticsEnabled>
+    <MessageStatisticsEnabled>false</MessageStatisticsEnabled>
+    <RxMsgResolvingBySenderEnabled>true</RxMsgResolvingBySenderEnabled>
+    <TimestampFormat>HH:mm:ss.fff</TimestampFormat>
+    <ArbitrationIdFormat>{0:X8}</ArbitrationIdFormat>
+    <DataFormat>{0:X2} </DataFormat>
+  </Settings>
+  <Filters />
+  <CustomArbIdColumns />
+  <TraceGridLayout>
+    <ColumnLayout>
+      <Name>columnIndex</Name>
+      <DisplayIndex>0</DisplayIndex>
+      <Width>58</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnName</Name>
+      <DisplayIndex>1</DisplayIndex>
+      <Width>60</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnTimestamp</Name>
+      <DisplayIndex>2</DisplayIndex>
+      <Width>83</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDirection</Name>
+      <DisplayIndex>3</DisplayIndex>
+      <Width>1363</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnType</Name>
+      <DisplayIndex>4</DisplayIndex>
+      <Width>56</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnRemote</Name>
+      <DisplayIndex>5</DisplayIndex>
+      <Width>69</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnLength</Name>
+      <DisplayIndex>6</DisplayIndex>
+      <Width>65</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnArbitrationId</Name>
+      <DisplayIndex>7</DisplayIndex>
+      <Width>91</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnData</Name>
+      <DisplayIndex>8</DisplayIndex>
+      <Width>55</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDocumentation</Name>
+      <DisplayIndex>9</DisplayIndex>
+      <Width>104</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDescription</Name>
+      <DisplayIndex>10</DisplayIndex>
+      <Width>357</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+  </TraceGridLayout>
+  <LogGridLayout>
+    <ColumnLayout>
+      <Name>columnIndex</Name>
+      <DisplayIndex>0</DisplayIndex>
+      <Width>58</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnName</Name>
+      <DisplayIndex>1</DisplayIndex>
+      <Width>60</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnTimestamp</Name>
+      <DisplayIndex>10</DisplayIndex>
+      <Width>859</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDirection</Name>
+      <DisplayIndex>7</DisplayIndex>
+      <Width>439</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnType</Name>
+      <DisplayIndex>2</DisplayIndex>
+      <Width>56</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnRemote</Name>
+      <DisplayIndex>3</DisplayIndex>
+      <Width>69</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnLength</Name>
+      <DisplayIndex>4</DisplayIndex>
+      <Width>65</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnArbitrationId</Name>
+      <DisplayIndex>5</DisplayIndex>
+      <Width>91</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnData</Name>
+      <DisplayIndex>6</DisplayIndex>
+      <Width>55</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDocumentation</Name>
+      <DisplayIndex>8</DisplayIndex>
+      <Width>104</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDescription</Name>
+      <DisplayIndex>9</DisplayIndex>
+      <Width>85</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+  </LogGridLayout>
+  <StatisticsGridLayout>
+    <ColumnLayout>
+      <Name>columnIndex</Name>
+      <DisplayIndex>0</DisplayIndex>
+      <Width>58</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnName</Name>
+      <DisplayIndex>1</DisplayIndex>
+      <Width>60</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDirection</Name>
+      <DisplayIndex>2</DisplayIndex>
+      <Width>74</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnArbitrationId</Name>
+      <DisplayIndex>3</DisplayIndex>
+      <Width>91</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnType</Name>
+      <DisplayIndex>4</DisplayIndex>
+      <Width>56</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnRemote</Name>
+      <DisplayIndex>5</DisplayIndex>
+      <Width>69</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnRate</Name>
+      <DisplayIndex>6</DisplayIndex>
+      <Width>93</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnCount</Name>
+      <DisplayIndex>7</DisplayIndex>
+      <Width>60</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnPeriodTime</Name>
+      <DisplayIndex>8</DisplayIndex>
+      <Width>107</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDeltaMin</Name>
+      <DisplayIndex>9</DisplayIndex>
+      <Width>80</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDeltaMax</Name>
+      <DisplayIndex>10</DisplayIndex>
+      <Width>83</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnTimestamp</Name>
+      <DisplayIndex>11</DisplayIndex>
+      <Width>83</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnData</Name>
+      <DisplayIndex>12</DisplayIndex>
+      <Width>55</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnLength</Name>
+      <DisplayIndex>13</DisplayIndex>
+      <Width>65</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDeltaT</Name>
+      <DisplayIndex>14</DisplayIndex>
+      <Width>529</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+  </StatisticsGridLayout>
+  <FilterGridLayout>
+    <ColumnLayout>
+      <Name>columnIndex</Name>
+      <DisplayIndex>0</DisplayIndex>
+      <Width>58</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnName</Name>
+      <DisplayIndex>1</DisplayIndex>
+      <Width>60</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnEnabled</Name>
+      <DisplayIndex>2</DisplayIndex>
+      <Width>65</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnMaskOrArbId</Name>
+      <DisplayIndex>3</DisplayIndex>
+      <Width>132</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnArbitrationId</Name>
+      <DisplayIndex>4</DisplayIndex>
+      <Width>91</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnType</Name>
+      <DisplayIndex>5</DisplayIndex>
+      <Width>56</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnRemote</Name>
+      <DisplayIndex>6</DisplayIndex>
+      <Width>69</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDirection</Name>
+      <DisplayIndex>7</DisplayIndex>
+      <Width>74</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnMode</Name>
+      <DisplayIndex>8</DisplayIndex>
+      <Width>958</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+  </FilterGridLayout>
+  <Tools>
+    <StorageToolItem>
+      <Name>Messages</Name>
+      <ToolType>CAN</ToolType>
+      <ToolObject xsi:type="ArrayOfStorageCanTxMessageItem">
+        <StorageCanTxMessageItem>
+          <Name>New_Message_1</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_2</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_3</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_4</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_5</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_6</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_7</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_8</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_9</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_10</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_11</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_12</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_13</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_14</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_15</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_16</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_17</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_18</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_19</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_20</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_21</Name>
+          <Key />
+          <IsPeriod>true</IsPeriod>
+          <PeriodTime>1</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description />
+        </StorageCanTxMessageItem>
+      </ToolObject>
+    </StorageToolItem>
+  </Tools>
+  <ToolsLayouts>
+    <ColumnLayoutCollection>
+      <ColumnLayoutItem>
+        <Name>columnIndex</Name>
+        <DisplayIndex>0</DisplayIndex>
+        <Width>58</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnName</Name>
+        <DisplayIndex>1</DisplayIndex>
+        <Width>105</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnClick</Name>
+        <DisplayIndex>2</DisplayIndex>
+        <Width>55</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnKey</Name>
+        <DisplayIndex>3</DisplayIndex>
+        <Width>50</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnIsPeriod</Name>
+        <DisplayIndex>4</DisplayIndex>
+        <Width>70</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnPeriodTime</Name>
+        <DisplayIndex>5</DisplayIndex>
+        <Width>107</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnType</Name>
+        <DisplayIndex>6</DisplayIndex>
+        <Width>86</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnRemote</Name>
+        <DisplayIndex>7</DisplayIndex>
+        <Width>69</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnLength</Name>
+        <DisplayIndex>8</DisplayIndex>
+        <Width>65</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnArbitrationId</Name>
+        <DisplayIndex>9</DisplayIndex>
+        <Width>91</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnData</Name>
+        <DisplayIndex>10</DisplayIndex>
+        <Width>1178</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnDocumentation</Name>
+        <DisplayIndex>11</DisplayIndex>
+        <Width>104</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnDescription</Name>
+        <DisplayIndex>12</DisplayIndex>
+        <Width>1010</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+    </ColumnLayoutCollection>
+  </ToolsLayouts>
+</mcanxProject>

@@ -1,0 +1,5 @@
+17:36:17,961 2015.12.04.:Event Open DiagOnCan-MUDS150628
+17:36:17,961 2015.12.04.:Tx 733 8 02 03 19 00 00 00 00 00
+17:36:18,016 2015.12.04.:Rx 73B 8 03 7F 03 11 00 00 00 00
+17:36:18,017 2015.12.04.:Error Event:NRC response SID:0x03.Error Code:0x11.Error Msg:serviceNotSupported
+17:36:18,017 2015.12.04.:Event Close

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment Id="FragmentApplication">
+
+    <!-- This is how we include wxi files -->
+    <?include $(sys.CURRENTDIR)Config.wxi ?>
+    
+    <DirectoryRef Id="AppFolder">
+      <Directory Id="Lang_hu_HU" Name="hu-HU"/>
+      <Directory Id="Lang_en_US" Name="en-US"/>
+    </DirectoryRef>
+   
+    <ComponentGroup Id="Application_Components" >
+      <!--**************************************************************-->
+      <!-- ProgramMenuFolder = C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Konvolucio\-->
+      <Component Id ="AppProgramsMenuFolder" Directory="AppFolder" Guid="{4C20EFCE-04D5-47E1-B60E-CB999D39176A}" >
+        <RemoveFolder Id="AppProgramsFolder" On='uninstall'  Directory='AppProgramsFolder'/>
+        <RegistryValue Root='HKCU' Key='Software\[Manufacturer]\[ProductName]' Type='string' Value='' KeyPath='yes' />
+      </Component>
+      
+      <Component Id="AppFiels_API.dll" Directory="AppFolder" Guid="{48D2ADF4-03B9-4CD7-892E-EA31253A22CD}">
+        <File Id = "_Konvolucio.WinUSB.dll"                     Source="$(var.AppDirectory)\Konvolucio.WinUSB.dll" KeyPath="no" Checksum="yes" />
+        <File Id = "_Konvolucio.MCAN120803.API.dll"             Source="$(var.AppDirectory)\Konvolucio.MCAN120803.API.dll" KeyPath="no" Checksum="yes" />
+        <File Id = "_System.Data.SQLite.dll"                    Source="$(var.AppResourceDirectory)\SQLite\sqlite-netFx40-static-binary-bundle-Win32-2010-1.0.101.0\System.Data.SQLite.dll" KeyPath="no" Checksum="yes" />
+        <File Id = "_EPPlus.dll"                                Source="$(var.AppResourceDirectory)\EPPlus\EPPlus 4.1\DotNet4\EPPlus.dll" KeyPath="no" Checksum="yes" />
+        <File Id = "_Konvolucio.WinForms.Framework.dll"         Source="$(var.AppDirectory)\Konvolucio.WinForms.Framework.dll" KeyPath="no" Checksum="yes" />
+      </Component>
+      
+      <Component Id="AppLanguage_huHU" Directory="Lang_hu_HU" Guid="{906449B8-1198-47E4-89C7-09BBB9147A32}">
+        <File Id = "_hu_HU_Konvolucio.MCAN120803.GUI"           Source="$(var.AppDirectory)\hu-HU\Konvolucio.MCAN120803.GUI.resources.dll" KeyPath="no" Checksum="yes" />
+        <File Id = "_hu_HU_Konvolucio.WinForms.Framework"       Source="$(var.AppDirectory)\hu-HU\Konvolucio.WinForms.Framework.resources.dll" KeyPath="no" Checksum="yes" />
+      </Component>
+
+      <Component Id="AppLanguage_enUS" Directory="Lang_en_US" Guid="{6F6EB47C-C3B3-4236-950B-1C62C3938F44}">
+        <File Id = "_en_US_Konvolucio.MCAN120803.GUI"           Source="$(var.AppDirectory)\en-US\Konvolucio.MCAN120803.GUI.resources.dll" KeyPath="no" Checksum="yes" />
+        <File Id = "_en_US_Konvolucio.WinForms.Framework"       Source="$(var.AppDirectory)\en-US\Konvolucio.WinForms.Framework.resources.dll" KeyPath="no" Checksum="yes" />
+      </Component>
+      
+      <Component Id="AppFiles_.MCAN120803.GUI.exe" Directory="AppFolder" Guid="{18CF814D-5293-452E-96C1-18B65170938A}">
+        <File Id = "_Konvolucio.MCAN120803.GUI.exe" Name="Konvolucio.MCAN120803.GUI.exe" Source="$(var.AppDirectory)\Konvolucio.MCAN120803.GUI.exe" KeyPath="yes" Checksum="yes">
+          <Shortcut Id="_Konvolucio.MCAN120803.GUI.exe" Directory="MCAN120803AppProgramsFolder" WorkingDirectory="AppFolder" Icon="AppAddRemove.ico" Name="CAN Bus Tool" Advertise="yes" />
+          <Shortcut Id="DesktopShortcut"    Directory="DesktopFolder"  WorkingDirectory = "AppFolder"  Icon="AppAddRemove.ico"  Name="CAN Bus Tool" Advertise="yes" />
+        </File>
+        
+        <!--Ez bejegyzi a kiterjesztéshez hogy mely progi induljon IconIndex="0" Icon="EQ_MCT_64x64.ico" Advertise="yes"-->
+        <ProgId Id='Konvolucio.MCAN120803.Extension' Description='CAN Bus Tool Project File' Icon="AppAddRemove.ico" Advertise="yes">
+          <Extension Id='mcanx' ContentType='Konvolucio.MCAN120803.ProjectFile' >
+            <Verb Id='open' Command='Open' Argument='"%1"'    />
+            <!--TargetFile='Konvolucio.MCAN120803.UI.exe'-->
+          </Extension>
+        </ProgId>
+        
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

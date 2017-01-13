@@ -1,0 +1,12 @@
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0001.ConnectTo\bin\Debug\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0001.ConnectTo\bin\Debug\Connecting.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0001.ConnectTo\bin\Debug\Connecting.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0001.ConnectTo\bin\Debug\Konvolucio.MCAN120803.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0001.ConnectTo\bin\Debug\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0001.ConnectTo\bin\Debug\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0001.ConnectTo\bin\Debug\Konvolucio.MCAN120803.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0001.ConnectTo\bin\Debug\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0001.ConnectTo\bin\Debug\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0001.ConnectTo\obj\x86\Debug\Example_0001.ConnectTo.csprojResolveAssemblyReference.cache
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0001.ConnectTo\obj\x86\Debug\Connecting.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0001.ConnectTo\obj\x86\Debug\Connecting.pdb

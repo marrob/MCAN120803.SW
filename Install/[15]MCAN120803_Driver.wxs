@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'
+   xmlns:iis='http://schemas.microsoft.com/wix/IIsExtension'>
+  <Fragment>
+
+    <?define DriverDirectory = "..\Resource\Drivers"?>
+    
+    <!-- Certificate pfx File-->
+    <Binary Id="CertificatePfxBinaryFile"
+            SourceFile="..\Resource\Certificate\Konvolucio.pfx" />
+    
+    <!-- Directory Sturcture -->
+    <DirectoryRef Id="AppDriverFolder">
+      <Directory Id="MCAN120803DriverFolder" Name="MCAN120803">
+        <Directory Id="MCAN120803_x86_DriverFolder" Name="x86"/>
+        <Directory Id="MCAN120803_amd64_DriverFolder" Name="amd64"/>
+      </Directory>
+    </DirectoryRef>
+
+    <!-- Install Action -->
+    <CustomAction  Id='Install_MCAN120803_x86_Driver' Directory='MCAN120803DriverFolder' Impersonate='no'
+       ExeCommand='"[MCAN120803DriverFolder]dpinst_x86.exe"  /PATH "[MCAN120803DriverFolder]' Execute ='deferred' Return ='ignore'>
+    </CustomAction>
+
+    <!-- Install Action -->
+    <CustomAction  Id='Install_MCAN120803_x64_Driver' Directory='MCAN120803DriverFolder' Impersonate='no'
+       ExeCommand='"[MCAN120803DriverFolder]dpinst_x64.exe" /PATH "[MCAN120803DriverFolder]' Execute ='deferred' Return ='ignore'>
+    </CustomAction>
+
+    <!-- Uninstall Action -->
+    <CustomAction  Id='Uninstall_MCAN120803_x86_Driver' Directory='MCAN120803DriverFolder' Impersonate='no'
+      ExeCommand='"[MCAN120803DriverFolder]dpinst_x86.exe" /U "[MCAN120803DriverFolder]MCAN120803pkg.inf' Execute ='deferred' Return='ignore' >
+    </CustomAction>
+
+    <!-- Uninstall Action -->
+    <CustomAction  Id='Uninstall_MCAN120803_x64_Driver' Directory='MCAN120803DriverFolder' Impersonate='no'
+      ExeCommand='"[MCAN120803DriverFolder]dpinst_x64.exe" /U "[MCAN120803DriverFolder]MCAN120803pkg.inf' Execute ='deferred' Return='ignore' >
+    </CustomAction>
+
+    <!-- Driver Files -->
+    <ComponentGroup Id="Driver_Components">
+      <Component Id="MCAN120803Drivers" Directory="MCAN120803DriverFolder" Guid="{A2E88883-A774-4782-A0B5-372539DBCC15}">
+        <File Id = "_dpinst_x86.exe_MCAN120803"    Source="$(var.DriverDirectory)\MCAN120803\dpinst_x86.exe"   KeyPath="no" Checksum="yes"/>
+        <File Id = "_dpinst_x64.exe_MCAN120803"    Source="$(var.DriverDirectory)\MCAN120803\dpinst_x64.exe"   KeyPath="no" Checksum="yes" />
+        <File Id = "_dpinst.xml_MCAN120803"        Source="$(var.DriverDirectory)\MCAN120803\dpinst.xml"       KeyPath="no" Checksum="yes" />
+        <File Id = "_MCAN120803pkg.inf_MCAN120803" Source="$(var.DriverDirectory)\MCAN120803\MCAN120803pkg.inf"   KeyPath="no" Checksum="yes" />
+        <File Id = "_MCAN120803.cat_MCAN120803"    Source="$(var.DriverDirectory)\MCAN120803\mcan120803.cat"   KeyPath="no" Checksum="yes" />
+      </Component>
+      <Component Id="MCAN120803_x86_Drivers" Directory="MCAN120803_x86_DriverFolder" Guid="{7E0ED349-7964-44AF-99C2-2CFE1EFC8DEA}">
+        <File Id = "_WdfCoInstaller01009_dllx86_MCAN120803"          Source="$(var.DriverDirectory)\MCAN120803\x86\WdfCoInstaller01009.dll"      KeyPath="no" Checksum="yes" />
+        <File Id = "_winusbcoinstaller2_dll_x86_MCAN120803"          Source="$(var.DriverDirectory)\MCAN120803\x86\winusbcoinstaller2.dll"       KeyPath="no" Checksum="yes" />
+      </Component>
+      <Component Id="MCAN120803_amd64_Drivers" Directory="MCAN120803_amd64_DriverFolder" Guid="{CA3E1F0F-3732-420F-B13D-50D2E51C8344}">
+        <File Id = "_WdfCoInstaller01009_dll_amd64_MCAN120803"       Source="$(var.DriverDirectory)\MCAN120803\amd64\WdfCoInstaller01009.dll"      KeyPath="no" Checksum="yes" />
+        <File Id = "_winusbcoinstaller2_dll_amd64_MCAN120803"        Source="$(var.DriverDirectory)\MCAN120803\amd64\winusbcoinstaller2.dll"       KeyPath="no" Checksum="yes" />
+      </Component>
+      
+      <!-- Install Certificate-->
+      <Component Id="MCAN120803_Certificate" Directory="AppDriverFolder" Guid="{5096962D-4F18-4D4F-8AFD-BF811155663A}" KeyPath="yes">
+        <iis:Certificate
+          Id="Konvolucio.Certificate"
+          StoreName="root"
+          Overwrite="yes"
+          Name="Konvolucio Certificate"
+          Request="no"
+          BinaryKey="CertificatePfxBinaryFile"
+          StoreLocation="localMachine"
+          PFXPassword="1234"/>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

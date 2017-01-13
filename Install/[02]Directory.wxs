@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+
+    <Property Id="MYDOCUMENTSPATH">
+      <RegistrySearch Id="MyDocumentsSearch" Root="HKCU" Type="directory" Name="Personal"
+            Key="Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders"/>
+    </Property>
+
+    
+    <!-- Directory Sturcture -->
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <!-- *Program Files* -->
+      <!--C:\Program Files\-->
+      <Directory Id = "ProgramFilesFolder">
+        <!--C:\Program Files\Konvolucio\-->
+        <Directory Id = "AppMnfFolder" Name="Konvolucio">
+          <!--C:\Program Files\Konvolucio\MCAN120803\-->
+          <Directory Id = "AppFolder" Name="MCAN120803">
+            <!--C:\Program Files\Konvolucio\MCAN120803\Manual\-->
+            <Directory Id = "AppManualFolder" Name="Manual"/>
+            <!--C:\Program Files\Konvolucio\MCAN120803\Drivers\-->
+            <Directory Id = "AppDriverFolder" Name="Drivers"/>
+          </Directory>
+        </Directory>
+      </Directory>
+
+      <!-- ProgramMenuFolder = C:\ProgramData\Microsoft\Windows\Start Menu\Programs\-->
+      <Directory Id = "ProgramMenuFolder" Name="Programs">
+        <!-- ProgramMenuFolder = C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Konvolúció Bt.\-->
+        <Directory Id = "AppProgramsFolder" Name="Konvolúció Bt.">
+          <!-- ProgramMenuFolder = C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Konvolúció Bt.\MCAN120803-->
+          <Directory Id ="MCAN120803AppProgramsFolder" Name="MCAN120803"/>  
+        </Directory>
+      </Directory>
+      <!-- *Desktop* -->
+      <!--DesktopFolder = C:\Users\Public\Desktop\-->
+      <Directory Id="DesktopFolder" Name="Desktop" />
+      <!-- *Desktop* -->
+      <!--C:\Users\Margit Róbert\Documents\Konvolucio\MCAN120803\-->
+      <Directory Id ="MYDOCUMENTSPATH" SourceName="User's Personal Data Folder">
+        <Directory Id = "MyDocMnfFolder" Name = "Konvolucio">
+          <Directory Id = "MyDocAppFolder" Name = "MCAN120803">
+            <Directory Id="MyDocExMCAN120803LvFolder" Name="LabVIEW 2011 Examples"/>
+         </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <!--MCAN120803AppProgramsFolder Add Remove File Table-->
+    <DirectoryRef Id="MCAN120803AppProgramsFolder">
+      <Component Id ="MCAN120803AppProgramsFolder_Component"  Guid="{9F7792EC-23CD-4110-A52F-AE76FC0968A1}" >
+        <RemoveFolder Id="MCAN120803AppProgramsFolder" On='uninstall' />
+        <RegistryValue Root='HKCU' Key='Software\[Manufacturer]\[ProductName]' Type='string' Value='' KeyPath='yes' />
+      </Component>
+    </DirectoryRef>
+    
+    </Fragment>
+</Wix>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+
+    <!-- This is how we include wxi files -->
+    <?include $(sys.CURRENTDIR)Config.wxi ?>
+    
+    <DirectoryRef Id="MyDocAppFolder">
+      <Directory Id="ExamplesMCAN120803CsharpFolder" Name="Csharp .NET4.0 Examples">
+        <Directory Id ="Ex0001CsharpFolder" Name="Example_0001.Connect">
+          <Directory Id ="Ex0001PropCsharpFolder" Name="Properties"/>
+        </Directory>
+        <Directory Id ="Ex0002CsharpFolder" Name="Example_0002.ConnectTo">
+          <Directory Id ="Ex0002PropCsharpFolder" Name="Properties"/>
+        </Directory>
+        <Directory Id ="Ex0003CsharpFolder" Name="Example_0003.ConnectBySerialNumber">
+          <Directory Id ="Ex0003PropCsharpFolder" Name="Properties"/>
+        </Directory>
+        <Directory Id ="Ex0004CsharpFolder" Name="Example_0004.Write">
+          <Directory Id ="Ex0004PropCsharpFolder" Name="Properties"/>
+        </Directory>
+        <Directory Id ="Ex0005CsharpFolder" Name="Example_0004.Read">
+          <Directory Id ="Ex0005PropCsharpFolder" Name="Properties"/>
+        </Directory>
+        <Directory Id ="Ex0006CsharpFolder" Name="Example_0006.Loopback">
+          <Directory Id ="Ex0006PropCsharpFolder" Name="Properties"/>
+        </Directory>
+      </Directory>
+    </DirectoryRef>
+ 
+  <ComponentGroup Id="Csharp_Components">
+    
+    <Component Id="Ex0001CsharpFiles" Directory="Ex0001CsharpFolder" Guid="{2DEB2FDF-C9C2-45F9-877D-B09D08917768}">
+      <File Id = "_1001_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0001.Connect\Program.cs" KeyPath="no" Checksum="yes"/>
+      <File Id = "_1002_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0001.Connect\Example_0001.Connect.csproj" KeyPath="no" Checksum="yes"/>
+    </Component>
+    <Component Id="Ex0001CsharpPropFiles" Directory="Ex0001PropCsharpFolder" Guid="{9F96E0D2-3820-4C20-9EE9-BC2B3CCCF949}">
+      <File Id = "_1003_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0001.Connect\Properties\AssemblyInfo.cs" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+    <Component Id="Ex0002CsharpFiles" Directory="Ex0002CsharpFolder" Guid="{51A8B4C3-8E2D-49AF-B565-116ABF0DC2BE}">
+      <File Id = "_2001_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0002.ConnectTo\Program.cs" KeyPath="no" Checksum="yes"/>
+      <File Id = "_2002_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0002.ConnectTo\Example_0002.ConnectTo.csproj" KeyPath="no" Checksum="yes"/>
+    </Component>
+    <Component Id="Ex0002CsharpPropFiles" Directory="Ex0002PropCsharpFolder" Guid="{BD36F922-D19B-4CAE-9CCA-789BEEFBB4A0}">
+      <File Id = "_2003_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0002.ConnectTo\Properties\AssemblyInfo.cs" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+    <Component Id="Ex0003CsharpFiles" Directory="Ex0003CsharpFolder" Guid="{7CDF1121-66DF-4085-BDF5-3EDF71245481}">
+      <File Id = "_3001_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0003.ConnectBySerialNumber\Program.cs" KeyPath="no" Checksum="yes"/>
+      <File Id = "_3002_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0003.ConnectBySerialNumber\Example_0003.ConnectBySerialNumber.csproj" KeyPath="no" Checksum="yes"/>
+    </Component>
+    <Component Id="Ex0003CsharpPropFiles" Directory="Ex0003PropCsharpFolder" Guid="{53567D48-4AD8-4AE1-80A5-B5E6A35D1095}">
+      <File Id = "_3003_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0003.ConnectBySerialNumber\Properties\AssemblyInfo.cs" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+    <Component Id="Ex0004CsharpFiles" Directory="Ex0004CsharpFolder" Guid="{853FE70C-E388-4557-A0D1-D9C771772D9B}">
+      <File Id = "_4001_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0004.Write\Program.cs" KeyPath="no" Checksum="yes"/>
+      <File Id = "_4002_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0004.Write\Example_0004.Write.csproj" KeyPath="no" Checksum="yes"/>
+    </Component>
+    <Component Id="Ex0004CsharpPropFiles" Directory="Ex0004PropCsharpFolder" Guid="{EE60C49C-38BC-49E0-98F2-8D3D8145995C}">
+      <File Id = "_4003_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0004.Write\Properties\AssemblyInfo.cs" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+    <Component Id="Ex0005CsharpFiles" Directory="Ex0005CsharpFolder" Guid="{92212246-7285-4ADF-B7AF-8CE5DF91E935}">
+      <File Id = "_5001_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0005.Read\Program.cs" KeyPath="no" Checksum="yes"/>
+      <File Id = "_5002_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0005.Read\Example_0005.Read.csproj" KeyPath="no" Checksum="yes"/>
+    </Component>
+    <Component Id="Ex0005CsharpPropFiles" Directory="Ex0005PropCsharpFolder" Guid="{19E4E886-3517-4076-9C18-0E7DFE1650D9}">
+      <File Id = "_5003_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0005.Read\Properties\AssemblyInfo.cs" KeyPath="no" Checksum="yes"/>
+    </Component>
+    
+    <Component Id="Ex0006CsharpFiles" Directory="Ex0006CsharpFolder" Guid="{52D130FB-6412-4789-A5A7-26A57B7FF518}">
+      <File Id = "_6001_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0006.Loopback\Program.cs" KeyPath="no" Checksum="yes"/>
+      <File Id = "_6002_CSHARP_MCAN120803" Source="$(var.ExamplesDirectory)\Example_0006.Loopback\Example_0006.Loopback.csproj" KeyPath="no" Checksum="yes"/>
+    </Component>
+    <Component Id="Ex0006CsharpPropFiles" Directory="Ex0006PropCsharpFolder" Guid="{84CF5DB5-A825-4F58-8D3C-E6EE5CE29EBD}">
+      <File Id = "_6003_CSHARP_MCAN120803" Source=  "$(var.ExamplesDirectory)\Example_0006.Loopback\Properties\AssemblyInfo.cs" KeyPath="no" Checksum="yes"/>
+    </Component>
+    
+    </ComponentGroup>
+  </Fragment>
+</Wix>

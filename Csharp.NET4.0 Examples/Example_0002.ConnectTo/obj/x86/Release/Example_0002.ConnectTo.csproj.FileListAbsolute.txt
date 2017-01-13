@@ -1,0 +1,52 @@
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\bin\Release\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\bin\Release\Connecting.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\bin\Release\Connecting.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.MCAN120803.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\bin\Release\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.MCAN120803.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.WinUSB.xml
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\bin\Release\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\obj\x86\Release\Example_0002.ConnectTo.csprojResolveAssemblyReference.cache
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\obj\x86\Release\Connecting.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0002.ConnectTo\obj\x86\Release\Connecting.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Example_0002.ConnectTo.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Example_0002.ConnectTo.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.MCAN120803.API.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.MCAN120803.API.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.WinUSB.xml
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\obj\x86\Release\Example_0002.ConnectTo.csprojResolveAssemblyReference.cache
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\obj\x86\Release\Example_0002.ConnectTo.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\obj\x86\Release\Example_0002.ConnectTo.pdb
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Example_0002.ConnectTo.exe
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Example_0002.ConnectTo.pdb
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.MCAN120803.API.dll
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.MCAN120803.API.pdb
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.WinUSB.xml
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\bin\Release\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\obj\x86\Release\Example_0002.ConnectTo.csprojResolveAssemblyReference.cache
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\obj\x86\Release\Example_0002.ConnectTo.exe
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0002.ConnectTo\obj\x86\Release\Example_0002.ConnectTo.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\bin\Release\Example_0002.ConnectTo.exe
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\bin\Release\Example_0002.ConnectTo.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.MCAN120803.API.dll
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\bin\Release\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\bin\Release\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\obj\x86\Release\Example_0002.ConnectTo.exe
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\obj\x86\Release\Example_0002.ConnectTo.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\bin\Release\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.MCAN120803.API.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\bin\Release\Konvolucio.WinUSB.xml
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0002.ConnectTo\obj\x86\Release\Example_0002.ConnectTo.csprojResolveAssemblyReference.cache

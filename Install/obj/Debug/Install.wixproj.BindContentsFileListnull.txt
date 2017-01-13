@@ -1,0 +1,221 @@
+..\..\Sample Projects\0001\0001.mcanx
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Konvolucio MCAN120803.lvlib
+..\..\Sample Projects\CXMCU3\0001_ShowMe.JPG
+..\..\Sample Projects\0002\0002.mcanx
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Konvolucio MCAN120803.lvproj
+..\..\Sample Projects\CXMCU3\0002_ShowMe.JPG
+..\..\Sample Projects\0003\0003.mcanx
+..\..\LabVIEW 2011\Konvolucio MCAN120803\dir.mnu
+..\..\Sample Projects\CXMCU3\0003_ShowMe.JPG
+..\..\Sample Projects\0004\0004.mcanx
+..\..\Sample Projects\0005\0005.mcanx
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db
+..\..\Sample Projects\0006\0006.mcanx
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db
+..\..\Sample Projects\0007\0007_ExtArbIdColne.mcanx
+..\..\Sample Projects\0007\0007_ExtArbIdMSBbit.mcanx
+..\..\Sample Projects\0007\0007_StdArbIdIDT1Reg.mcanx
+..\..\Sample Projects\0007\0007_StdArbIdIDT2Reg.mcanx
+..\..\Sample Projects\0007\0007_StdArbIdMSBbit.mcanx
+..\..\Sample Projects\0008\0008.mcanx
+..\..\Sample Projects\0009\0009.mcanx
+..\..\Sample Projects\0010\0010.mcanx
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example Tool.ini
+..\..\Csharp .NET4.0 Examples\Example_0001.Connect\Program.cs
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example Tool.vi
+..\..\TestStand 2010 SP1\Konvolucio MCAN120803 .NET Adapter Sample.seq
+..\..\Csharp .NET4.0 Examples\Example_0001.Connect\Example_0001.Connect.csproj
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0001 Connect.vi
+..\..\TestStand 2010 SP1\Konvolucio MCAN120803 LabView Adapter Sample.seq
+..\..\Csharp .NET4.0 Examples\Example_0001.Connect\Properties\AssemblyInfo.cs
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0002 ConnectTo.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0003 ConnectBySerialNumber.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0004 Write.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0005 WriteSingleFrame.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0006 Read.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0007 Loopback.vi
+..\..\Sample Projects\OMRON GRT1-DRT\Log Storage for OMRON GRT1-DRT\160628 174955 - Allocate_GetSerialNumber.s3db
+..\..\Sample Projects\OMRON GRT1-DRT\Log Storage for OMRON GRT1-DRT\160629 151909 - Read Fragmanted Frame.s3db
+..\..\Csharp .NET4.0 Examples\Example_0002.ConnectTo\Program.cs
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Private\dotNetTick2LvTimestamp.vi
+..\..\Csharp .NET4.0 Examples\Example_0002.ConnectTo\Example_0002.ConnectTo.csproj
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Private\dotNetExceptionWrapper.vi
+..\..\Csharp .NET4.0 Examples\Example_0002.ConnectTo\Properties\AssemblyInfo.cs
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Private\dotNetExceptionStringWrapper.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Private\ErrorHelper.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Private\ErrorHandler.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Private\IsNullReferenceCheck.vi
+..\Resource\Application\Konvolucio.WinUSB.dll
+..\Resource\Application\Konvolucio.MCAN120803.API.dll
+..\..\Csharp .NET4.0 Examples\Example_0003.ConnectBySerialNumber\Program.cs
+..\..\Csharp .NET4.0 Examples\Example_0003.ConnectBySerialNumber\Example_0003.ConnectBySerialNumber.csproj
+..\..\Csharp .NET4.0 Examples\Example_0003.ConnectBySerialNumber\Properties\AssemblyInfo.cs
+..\..\Csharp .NET4.0 Examples\Example_0004.Write\Program.cs
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Services\services.mnu
+..\..\Csharp .NET4.0 Examples\Example_0004.Write\Example_0004.Write.csproj
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Services\Reset.vi
+..\..\Csharp .NET4.0 Examples\Example_0004.Write\Properties\AssemblyInfo.cs
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Services\Start.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Services\Stop.vi
+..\..\Csharp .NET4.0 Examples\Example_0005.Read\Program.cs
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGet.vi
+..\..\Csharp .NET4.0 Examples\Example_0005.Read\Example_0005.Read.csproj
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetAssemblyVersion.vi
+..\..\Csharp .NET4.0 Examples\Example_0005.Read\Properties\AssemblyInfo.cs
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetBaudrate.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetFilter.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetFirmwareRev.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetIsConnected.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetIsOpen.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetListenOnly.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetLoopback.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetMask.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetNonAutoRetransmission.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetPcbRev.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetRxDrop.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetRxErrorCounter.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetRxPendingMsg.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetRxTotal.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetSerialNumber.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetState.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetTermination.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetTxDrop.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetTxErrorCounter.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetTxPendingMsg.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrGetTxTotal.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\attributes.mnu
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrSet.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrSetBaudrate.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrSetFilter.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrSetListenOnly.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrSetLoopback.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrSetMask.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrSetNonAutoRetransmission.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Attributes\AttrSetTermination.vi
+..\..\Csharp .NET4.0 Examples\Example_0006.Loopback\Program.cs
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Configure\Close.vi
+..\..\Csharp .NET4.0 Examples\Example_0006.Loopback\Example_0006.Loopback.csproj
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Configure\configure.mnu
+..\..\Csharp .NET4.0 Examples\Example_0006.Loopback\Properties\AssemblyInfo.cs
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Configure\Connect.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Configure\ConnectBySerialNumber.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Configure\ConnectTo.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Configure\Disconnect.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Configure\Flush.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Configure\GetAdapters.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Configure\GetBaudrates.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Configure\Open.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Data\Data.mnu
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Data\Read.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Data\Write.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Data\WriteSingleFrame.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Tools\Tools.mnu
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Tools\ByteArrayToHexStringArray.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Public\Tools\HexStringArrayToByteArray.vi
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Types\AdapterItemType.ctl
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Types\BaudRateItemType.ctl
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Types\CanHandleType.ctl
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Types\MessageType.ctl
+..\..\LabVIEW 2011\Konvolucio MCAN120803\Types\StateType.ctl
+..\Resource\Drivers\MCAN120803\dpinst.xml
+..\Resource\Drivers\MCAN120803\dpinst_x64.exe
+..\Resource\Drivers\MCAN120803\dpinst_x86.exe
+..\Resource\Application\en-US\Konvolucio.MCAN120803.GUI.resources.dll
+..\Resource\Application\en-US\Konvolucio.WinForms.Framework.resources.dll
+..\Resource\Application\EPPlus.dll
+..\Resource\Application\hu-HU\Konvolucio.MCAN120803.GUI.resources.dll
+..\Resource\Application\hu-HU\Konvolucio.WinForms.Framework.resources.dll
+..\Resource\Application\Konvolucio.MCAN120803.API.dll
+..\Resource\Application\Konvolucio.MCAN120803.GUI.exe
+..\Resource\Application\Konvolucio.WinForms.Framework.dll
+..\Resource\Application\Konvolucio.WinUSB.dll
+..\Resource\Doc\Fehlasználói kézikönyv CAN Adapter MCAN120803.pdf
+..\Resource\Drivers\MCAN120803\mcan120803.cat
+..\Resource\Drivers\MCAN120803\MCAN120803pkg.inf
+..\Resource\SQLite\sqlite-netFx40-static-binary-bundle-Win32-2010-1.0.101.0\System.Data.SQLite.dll
+..\Resource\Drivers\MCAN120803\amd64\WdfCoInstaller01009.dll
+..\Resource\Drivers\MCAN120803\x86\WdfCoInstaller01009.dll
+..\Resource\Drivers\MCAN120803\amd64\winusbcoinstaller2.dll
+..\Resource\Drivers\MCAN120803\x86\winusbcoinstaller2.dll
+..\..\Sample Projects\CP1540\CP1540.mcanx
+..\..\Sample Projects\CXMCU3\CXMCU3.mcanx
+..\..\Sample Projects\OMRON GRT1-DRT\OMRON GRT1-DRT.mcanx
+..\..\Sample Projects\CXMCU3\Log Storage for CXMCU3\Sample_0001.s3db

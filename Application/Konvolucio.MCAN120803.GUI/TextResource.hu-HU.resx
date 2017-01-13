@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="columnArbitrationId" xml:space="preserve">
+    <value>Arbitrációs az.</value>
+  </data>
+  <data name="columnClick" xml:space="preserve">
+    <value>Klik</value>
+  </data>
+  <data name="columnComment" xml:space="preserve">
+    <value>Megjegyzés</value>
+  </data>
+  <data name="columnData" xml:space="preserve">
+    <value>Adat</value>
+  </data>
+  <data name="columnDescription" xml:space="preserve">
+    <value>Leírás</value>
+  </data>
+  <data name="columnDirection" xml:space="preserve">
+    <value>Irány</value>
+  </data>
+  <data name="columnDocumentation" xml:space="preserve">
+    <value>Dokumentáció</value>
+  </data>
+  <data name="columnIndex" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="columnIsPeriod" xml:space="preserve">
+    <value>Periodikus</value>
+  </data>
+  <data name="columnKey" xml:space="preserve">
+    <value>Bill.</value>
+  </data>
+  <data name="columnLength" xml:space="preserve">
+    <value>Hossz</value>
+  </data>
+  <data name="columnName" xml:space="preserve">
+    <value>Név</value>
+  </data>
+  <data name="columnPeriodTime" xml:space="preserve">
+    <value>Periodusidő [ms]</value>
+  </data>
+  <data name="columnRemote" xml:space="preserve">
+    <value>Távoli</value>
+  </data>
+  <data name="columnTimestamp" xml:space="preserve">
+    <value>Időbléyeg</value>
+  </data>
+  <data name="columnType" xml:space="preserve">
+    <value>Típus</value>
+  </data>
+  <data name="menuItem_AddToFilter_Text" xml:space="preserve">
+    <value>Szűrhöhoz ad</value>
+  </data>
+  <data name="menuItem_AutoColumnWidth_Text" xml:space="preserve">
+    <value>Automatikus oszlopszélesség</value>
+  </data>
+  <data name="menuItem_AutoScrolling_Text" xml:space="preserve">
+    <value>Automatikus görgetés</value>
+  </data>
+  <data name="menuItem_Baudrate_ToolTip" xml:space="preserve">
+    <value>Átviteli sebesség kiválasztása (Baud Rate)</value>
+  </data>
+  <data name="menuItem_Clear_Text" xml:space="preserve">
+    <value>Törlés</value>
+  </data>
+  <data name="menuItem_Copy_Text" xml:space="preserve">
+    <value>Másolás</value>
+  </data>
+  <data name="menuItem_DeleteMsg_Text" xml:space="preserve">
+    <value>Üzenet törlése</value>
+  </data>
+  <data name="menuItem_Delete_Text" xml:space="preserve">
+    <value>Törlés</value>
+  </data>
+  <data name="menuItem_Disable_Text" xml:space="preserve">
+    <value>Kikapcsol</value>
+  </data>
+  <data name="menuItem_EditDescription_Text" xml:space="preserve">
+    <value>Ismertető szerkesztése</value>
+  </data>
+  <data name="menuItem_Enable_Text" xml:space="preserve">
+    <value>Bekapcsol</value>
+  </data>
+  <data name="menuItem_ExpandAllSection_Text" xml:space="preserve">
+    <value>Összes szekció kibontása</value>
+  </data>
+  <data name="menuItem_Export_Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="menuItem_ListenOnly_Text" xml:space="preserve">
+    <value>CSAK FIGYEL</value>
+  </data>
+  <data name="menuItem_ListenOnly_ToolTip" xml:space="preserve">
+    <value>Nem nyugtáz üzenetet.</value>
+  </data>
+  <data name="menuItem_Loopback_Text" xml:space="preserve">
+    <value>VISSZACSATOLT</value>
+  </data>
+  <data name="menuItem_Loopback_ToolTip" xml:space="preserve">
+    <value>Az elküldött üzenetet visszakapja.</value>
+  </data>
+  <data name="menuItem_NewFilter_Text" xml:space="preserve">
+    <value>Új szűrő</value>
+  </data>
+  <data name="menuItem_NewMsg_Text" xml:space="preserve">
+    <value>Új üzenet</value>
+  </data>
+  <data name="menuItem_NonAutoReTx_Text" xml:space="preserve">
+    <value>NINCS ISMÉTELT KÜLDÉS</value>
+  </data>
+  <data name="menuItem_NonAutoReTx_ToolTip" xml:space="preserve">
+    <value>Az eszköz az üzenet küldésével nem probálkozik, alaphelyzetben többször probálkozik.</value>
+  </data>
+  <data name="menuItem_Off_Text" xml:space="preserve">
+    <value>Ki</value>
+  </data>
+  <data name="menuItem_Paste_Text" xml:space="preserve">
+    <value>Beilleszt</value>
+  </data>
+  <data name="menuItem_Reload_Text" xml:space="preserve">
+    <value>Újratölt</value>
+  </data>
+  <data name="menuItem_Rename_Text" xml:space="preserve">
+    <value>Átnevez</value>
+  </data>
+  <data name="menuItem_Reset_Text" xml:space="preserve">
+    <value>Újraindítás</value>
+  </data>
+  <data name="menuItem_Save_Text" xml:space="preserve">
+    <value>Mentés</value>
+  </data>
+  <data name="menuItem_ShowHide_Text" xml:space="preserve">
+    <value>Elrejtés/Megjelenítés</value>
+  </data>
+  <data name="menuItem_Termination_Text" xml:space="preserve">
+    <value>LEZÁRÁS</value>
+  </data>
+  <data name="menuItem_Termination_ToolTip" xml:space="preserve">
+    <value>Buszt lezáró ellenállás engedélyezése.</value>
+  </data>
+  <data name="msgBox_DoYouWantToSave_Text" xml:space="preserve">
+    <value>Menti a(z) {0} módosításait?</value>
+  </data>
+  <data name="node_Adapter_Text" xml:space="preserve">
+    <value>Adapter</value>
+  </data>
+  <data name="node_ArbitrationId_Text" xml:space="preserve">
+    <value>Arbitrációs az: [{0}]</value>
+  </data>
+  <data name="node_Count_Text" xml:space="preserve">
+    <value>Száma</value>
+  </data>
+  <data name="node_Data_Text" xml:space="preserve">
+    <value>Adat</value>
+  </data>
+  <data name="node_Direction_Text" xml:space="preserve">
+    <value>Irány</value>
+  </data>
+  <data name="node_Drop_Text" xml:space="preserve">
+    <value>Elveszett</value>
+  </data>
+  <data name="node_Error_Text" xml:space="preserve">
+    <value>Hiba</value>
+  </data>
+  <data name="node_FilterNameArbId_Text" xml:space="preserve">
+    <value>Szürő: {0} [{1}]</value>
+  </data>
+  <data name="node_FilterNoNameArbId_Text" xml:space="preserve">
+    <value>Szürő: NEVTELEN [{0}]</value>
+  </data>
+  <data name="node_Filters_Text" xml:space="preserve">
+    <value>Szürők</value>
+  </data>
+  <data name="node_Last_Text" xml:space="preserve">
+    <value>Utolsó</value>
+  </data>
+  <data name="node_MessageNameArbId_Text" xml:space="preserve">
+    <value>Üzenet: {0} [{1}]</value>
+  </data>
+  <data name="node_MessageNoNameArbId_Text" xml:space="preserve">
+    <value>Üzenet: NEVTELEN [{0}]</value>
+  </data>
+  <data name="node_MessagesStatistics_Text" xml:space="preserve">
+    <value>Üzenet Statisztika</value>
+  </data>
+  <data name="node_Pending_Text" xml:space="preserve">
+    <value>Függőben</value>
+  </data>
+  <data name="node_PeriodTime_Text" xml:space="preserve">
+    <value>Periodusidő</value>
+  </data>
+  <data name="node_Received_Text" xml:space="preserve">
+    <value>Fogadott</value>
+  </data>
+  <data name="node_AdapterStatistics_Text" xml:space="preserve">
+    <value>Adapter Statisztika</value>
+  </data>
+  <data name="node_Time_Text" xml:space="preserve">
+    <value>Idő</value>
+  </data>
+  <data name="node_Total_Text" xml:space="preserve">
+    <value>Összesen</value>
+  </data>
+  <data name="node_Transmitted_Text" xml:space="preserve">
+    <value>Küldött</value>
+  </data>
+  <data name="node_Type_Text" xml:space="preserve">
+    <value>Típusa</value>
+  </data>
+  <data name="TestString" xml:space="preserve">
+    <value>Magyar vagyok nem turista.</value>
+  </data>
+  <data name="text_BaudRatePrescaler" xml:space="preserve">
+    <value>Átviteli sebesség osztó[BRP]: {0}</value>
+  </data>
+  <data name="text_BaudrateSystemClock" xml:space="preserve">
+    <value>Rendszer órajel[PCLK]: {0:N4} MHz</value>
+  </data>
+  <data name="text_DataTooLong" xml:space="preserve">
+    <value>Az adat keret maiximum 8 bájt lehet.</value>
+  </data>
+  <data name="text_FileNameInvalidCharacter" xml:space="preserve">
+    <value>A fájlnév nem megnengdett karakter(eket) tartalmaz: '{0}'</value>
+  </data>
+  <data name="text_InvalidArbitationIdFormat" xml:space="preserve">
+    <value>Érvénytelen formátum, az érték csak hexa szám lehet (0..F). Érvényes formátumok: "0x00" vagy "0x00000000" vagy "00000000"</value>
+  </data>
+  <data name="text_InvalidDataFormat" xml:space="preserve">
+    <value>Érvénytelen formátum, érték csak hexa szám lehet (0..F). Érvényes formátumok: "0x01, 0x02..." vagy "0x01 0x02..." vagy "01 02..." or "0102..."</value>
+  </data>
+  <data name="text_SymbolFirscCharacter" xml:space="preserve">
+    <value>A szimbólum első karaktere csak betüvel vagy '_' karakterrel kezdődhet a többi karatker lehet vagy betű vagy '_', lásd: ANSI C azanósítók.</value>
+  </data>
+  <data name="text_SymbolInvalidCharacter" xml:space="preserve">
+    <value>A szimbólum nem megengedett karaktert tartalmaz:'{0}'</value>
+  </data>
+  <data name="text_SymbolNameMaxLength" xml:space="preserve">
+    <value>Maximális szímbólum hossza: {0} karkter lehet.</value>
+  </data>
+  <data name="node_Logs_Text" xml:space="preserve">
+    <value>Naplók</value>
+  </data>
+  <data name="text_DISABLED" xml:space="preserve">
+    <value>KIAKPCSOLVA</value>
+  </data>
+  <data name="text_ENABLED" xml:space="preserve">
+    <value>BEKAPCSOLVA</value>
+  </data>
+  <data name="text_SENDER" xml:space="preserve">
+    <value>KÜLDŐ</value>
+  </data>
+  <data name="text_TRACE" xml:space="preserve">
+    <value>NYOMKÖVETŐ</value>
+  </data>
+  <data name="msgBox_RestartRequiredDoYouWantNow" xml:space="preserve">
+    <value>Újraindítás szükséges! Szeretnéd most?</value>
+  </data>
+  <data name="text_AlreadyExists" xml:space="preserve">
+    <value>Már létezik.</value>
+  </data>
+  <data name="text_ItCanNotBeANegativeNumber" xml:space="preserve">
+    <value>Nem lehet negatív szám.</value>
+  </data>
+  <data name="text_ItCanNotBeMoreThan" xml:space="preserve">
+    <value>Nem lehet több mint: {0}.</value>
+  </data>
+  <data name="text_TheFieldCantBeEmtpy" xml:space="preserve">
+    <value>A mező nem lehet üres.</value>
+  </data>
+  <data name="text_TheShiftIsTooLargeUpTo" xml:space="preserve">
+    <value>Az eltolás túl nagy, max {0} lehet.</value>
+  </data>
+  <data name="text_TheTextIsTooLong" xml:space="preserve">
+    <value>A szöveg túl hosszú.</value>
+  </data>
+  <data name="text_TheValueCanNotBeNull" xml:space="preserve">
+    <value>Nem lehet nulla.</value>
+  </data>
+  <data name="menuItem_CollapseAllSection_Text" xml:space="preserve">
+    <value>Összes szekció bezárása</value>
+  </data>
+  <data name="menuItem_ExpandMainSection_Text" xml:space="preserve">
+    <value>Fő szekció kibontása</value>
+  </data>
+  <data name="text_DirectoryCannotBeCreated" xml:space="preserve">
+    <value>Nem hozható létre a könyvtár.</value>
+  </data>
+  <data name="text_FileAlreadyExists" xml:space="preserve">
+    <value>Már létezik ilyen fájl.</value>
+  </data>
+  <data name="text_DESCRIPTION" xml:space="preserve">
+    <value>ISMERTETŐ</value>
+  </data>
+  <data name="text_LOGVIEW" xml:space="preserve">
+    <value>NAPLÓ</value>
+  </data>
+  <data name="text_STATISTICS" xml:space="preserve">
+    <value>ÜZENET STATISZTIKA</value>
+  </data>
+  <data name="columnCount" xml:space="preserve">
+    <value>Száma</value>
+  </data>
+  <data name="columnDeltaMax" xml:space="preserve">
+    <value>dtMax [ms]</value>
+  </data>
+  <data name="columnDeltaMin" xml:space="preserve">
+    <value>dtMin [ms]</value>
+  </data>
+  <data name="columnRate" xml:space="preserve">
+    <value>Gyakorisága [üz/s]</value>
+  </data>
+  <data name="columnDeltaT" xml:space="preserve">
+    <value>DeltaT [ms]</value>
+  </data>
+  <data name="menuItem_Default_Text" xml:space="preserve">
+    <value>Alaphelyzet</value>
+  </data>
+  <data name="text_FILTERS" xml:space="preserve">
+    <value>SZŰRŐK</value>
+  </data>
+  <data name="columnEnabled" xml:space="preserve">
+    <value>Be/Ki</value>
+  </data>
+  <data name="columnMaskOrArbId" xml:space="preserve">
+    <value>Maszk vagy Arbitrációs az.</value>
+  </data>
+  <data name="columnMode" xml:space="preserve">
+    <value>Üzemmód</value>
+  </data>
+  <data name="menuItem_New_Text" xml:space="preserve">
+    <value>Új</value>
+  </data>
+  <data name="text_ArbitrationId" xml:space="preserve">
+    <value>Arbitrációs az.</value>
+  </data>
+  <data name="text_Drop" xml:space="preserve">
+    <value>Dobd el.</value>
+  </data>
+  <data name="text_Mask" xml:space="preserve">
+    <value>Maszk</value>
+  </data>
+  <data name="text_InsertToLog" xml:space="preserve">
+    <value>Tedd a naplóba.</value>
+  </data>
+  <data name="text_InsertToTrace" xml:space="preserve">
+    <value>Tedd a nyomkövetőbe.</value>
+  </data>
+  <data name="text_InsertToTraceAndLog" xml:space="preserve">
+    <value>Tedd a nyomkövetőbe és a naplóba.</value>
+  </data>
+  <data name="menuItem_Fullscreen" xml:space="preserve">
+    <value>Teljes képernyő</value>
+  </data>
+</root>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<dpInst>
+        <dpinstTitle>MCAN120803 USB driver Installer</dpinstTitle>
+        <welcomeTitle>Welcome to the MCAN120803 USB driver Installer!</welcomeTitle>
+        <welcomeIntro>This wizard will walk you through updating the drivers for your MCAN120803 USB driver.</welcomeIntro>
+        <installHeaderTitle>Installing the software for your MCAN120803 USB driver...</installHeaderTitle>
+
+        <finishTitle>Congratulations! You are finished installing your MCAN120803 USB driver.</finishTitle>
+        <finishText>Enjoy using the MCAN120803 device.</finishText>
+    <enableNotListedLanguages/> 
+    <!-- <legacyMode/> !-->
+    <deleteBinaries/>
+    <forceIfDriverIsNotBetter/>
+    <!-- <suppressAddRemovePrograms/>!-->
+    <quietInstallStrict/>
+	<headerPath>Header.bmp</headerPath> 
+    <watermarkPath>Watermark.bmp</watermarkPath>
+</dpInst>

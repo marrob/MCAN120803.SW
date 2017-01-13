@@ -1,0 +1,18 @@
+obj\Release\[08]SampleProjects.wixobj
+obj\Release\[06]TestStandExamples.wixobj
+obj\Release\[05]LabVIEW2011.wixobj
+obj\Release\[01]MainSetup.wixobj
+obj\Release\[02]Directory.wixobj
+obj\Release\[03]Application.wixobj
+obj\Release\[04]Manual.wixobj
+obj\Release\[15]MCAN120803_Driver.wixobj
+D:\@@@!ProjectS\MCAN120803\Software.Setup\Install\bin\Release\Install.msi
+D:\@@@!ProjectS\MCAN120803\Software.Setup\Install\bin\Release\Install.wixpdb
+obj\Release\Install.wixproj.BindContentsFileListnull.txt
+obj\Release\Install.wixproj.BindOutputsFileListnull.txt
+obj\Release\Install.wixproj.BindBuiltOutputsFileListnull.txt
+obj\Release\[07]Csharp .NET4.0 Examples.wixobj
+D:\@@@!ProjectS\MCAN120803\Software\Software.Setup\Install\bin\Release\Install.msi
+D:\@@@!ProjectS\MCAN120803\Software\Software.Setup\Install\bin\Release\Install.wixpdb
+D:\@@@!ProjectS\MCAN120803\Software\Install\bin\Release\Install.msi
+D:\@@@!ProjectS\MCAN120803\Software\Install\bin\Release\Install.wixpdb

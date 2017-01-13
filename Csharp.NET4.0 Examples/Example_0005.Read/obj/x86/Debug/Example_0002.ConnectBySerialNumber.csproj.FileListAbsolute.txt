@@ -1,0 +1,12 @@
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0002.ConnectBySerialNumber\bin\Debug\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0002.ConnectBySerialNumber\bin\Debug\ConnectingBySerialNumber.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0002.ConnectBySerialNumber\bin\Debug\ConnectingBySerialNumber.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0002.ConnectBySerialNumber\bin\Debug\Konvolucio.MCAN120803.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0002.ConnectBySerialNumber\bin\Debug\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0002.ConnectBySerialNumber\bin\Debug\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0002.ConnectBySerialNumber\bin\Debug\Konvolucio.MCAN120803.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0002.ConnectBySerialNumber\bin\Debug\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0002.ConnectBySerialNumber\bin\Debug\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0002.ConnectBySerialNumber\obj\x86\Debug\Example_0002.ConnectBySerialNumber.csprojResolveAssemblyReference.cache
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0002.ConnectBySerialNumber\obj\x86\Debug\ConnectingBySerialNumber.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\Konvolucio.Examples\Example_0002.ConnectBySerialNumber\obj\x86\Debug\ConnectingBySerialNumber.pdb

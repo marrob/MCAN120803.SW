@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+
+    <!-- This is how we include wxi files -->
+    <?include $(sys.CURRENTDIR)Config.wxi ?>
+    
+    <Property Id="LABVIEWPATH">
+      <RegistrySearch Id="NationalInstrument" Root="HKLM" Type="directory" Name="Path"
+                      Key="Software\National Instruments\LabVIEW\CurrentVersion"/>
+    </Property>
+
+    <!-- Directory Sturcture -->
+    <DirectoryRef Id="AppFolder">
+      <Directory Id="LABVIEWPATH" Name="LabVIEW.instr.lib">
+        <Directory Id="LabViewInstrLibFolder" Name="instr.lib">
+          <Directory Id="LabViewMCAN120803LvFolder" Name="Konvolucio MCAN120803">
+            <Directory Id="ExamplesMCAN120803LvFolder" Name="Examples"/>
+            <Directory Id="PrivateMCAN120803LvFolder" Name="Private"/>
+            <Directory Id="PublicMCAN120803LvFolder" Name="Public">
+              <Directory Id ="ServicesMCAN120803LvFolder" Name="Services"/>
+              <Directory Id ="AttributesMCAN120803LvFolder" Name="Attributes"/>
+              <Directory Id ="ConfigureMCAN120803LvFolder" Name="Configure"/>
+              <Directory Id ="DataMCAN120803LvFolder" Name="Data"/>
+              <Directory Id ="ToolsMCAN120803LvFolder" Name="Tools"/>
+            </Directory>
+            <Directory Id="TypesMCAN120803LvFolder" Name="Types"/>
+          </Directory>
+        </Directory>
+      </Directory>
+    </DirectoryRef>
+        
+  <ComponentGroup Id="LabView2011_Components">
+      <!-- LabVIEW Files -->
+    <Component Id="RootMCAN120803Files" Directory="LabViewMCAN120803LvFolder" Guid="{DA6910A6-E513-4D4D-B549-E77608C41B93}">
+      <File Id = "_0001_Konvolucio_MCAN120803.lvlib" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Konvolucio MCAN120803.lvlib" KeyPath="no" Checksum="yes"/>
+      <File Id = "_0002_Konvolucio_MCAN120803.lvproj" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Konvolucio MCAN120803.lvproj" KeyPath="no" Checksum="yes"/>
+      <File Id = "_0003_dir.mnu" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\dir.mnu" KeyPath="no" Checksum="yes"/>
+    </Component>
+      <Component Id="PrivateMCAN120803Files" Directory="PrivateMCAN120803LvFolder" Guid="{4571AFF2-7D68-4A4F-A7F5-57E18EFF77D4}">
+        <File Id = "_2001_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Private\dotNetTick2LvTimestamp.vi" KeyPath="no" Checksum="yes"/>
+        <File Id = "_2002_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Private\dotNetExceptionWrapper.vi" KeyPath="no" Checksum="yes"/>
+        <File Id = "_2003_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Private\dotNetExceptionStringWrapper.vi" KeyPath="no" Checksum="yes"/>
+        <File Id = "_2004_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Private\ErrorHelper.vi" KeyPath="no" Checksum="yes"/>
+        <File Id = "_2005_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Private\ErrorHandler.vi" KeyPath="no" Checksum="yes"/>
+        <File Id = "_2006_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Private\IsNullReferenceCheck.vi" KeyPath="no" Checksum="yes"/>
+        <File Id = "_2007_MCAN120803" Source="$(var.AppDirectory)\Konvolucio.WinUSB.dll" KeyPath="no" Checksum="yes"/>
+        <File Id = "_2008_MCAN120803" Source="$(var.AppDirectory)\Konvolucio.MCAN120803.API.dll" KeyPath="no" Checksum="yes"/>
+      </Component>
+        <Component Id="ServicesMCAN120803LvFolder" Directory="ServicesMCAN120803LvFolder" Guid="{29D3CD84-D4DD-4F82-8501-92DA77C7FDD0}">
+          <File Id = "_4001_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Services\services.mnu" KeyPath="no" Checksum="yes"/>
+          <File Id = "_4002_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Services\Reset.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_4003_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Services\Start.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_4004_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Services\Stop.vi" KeyPath="no" Checksum="yes"/>
+        </Component>
+        <Component Id="AttributesMCAN120803Files" Directory="AttributesMCAN120803LvFolder" Guid="{51BA531A-73C9-43FA-8809-26A4CC0199FC}">
+          <File Id = "_5001_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGet.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5002_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetAssemblyVersion.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5003_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetBaudrate.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5004_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetFilter.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5005_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetFirmwareRev.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5006_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetIsConnected.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5007_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetIsOpen.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5008_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetListenOnly.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5009_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetLoopback.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5010_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetMask.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5011_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetNonAutoRetransmission.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5012_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetPcbRev.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5013_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetRxDrop.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5014_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetRxErrorCounter.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5015_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetRxPendingMsg.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5016_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetRxTotal.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5017_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetSerialNumber.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5018_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetState.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5019_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetTermination.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5020_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetTxDrop.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5021_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetTxErrorCounter.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5022_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetTxPendingMsg.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5023_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrGetTxTotal.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5024_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\attributes.mnu" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5025_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrSet.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5026_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrSetBaudrate.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5027_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrSetFilter.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5028_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrSetListenOnly.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5029_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrSetLoopback.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5030_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrSetMask.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5031_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrSetNonAutoRetransmission.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_5032_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Attributes\AttrSetTermination.vi" KeyPath="no" Checksum="yes"/>
+        </Component>
+        <Component Id="ConfigureMCAN120803Files" Directory="ConfigureMCAN120803LvFolder" Guid="{C7978106-78F4-4479-B3FA-4866C896E715}">
+          <File Id = "_6001_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Configure\Close.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_6002_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Configure\configure.mnu" KeyPath="no" Checksum="yes"/>
+          <File Id = "_6003_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Configure\Connect.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_6004_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Configure\ConnectBySerialNumber.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_6005_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Configure\ConnectTo.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_6006_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Configure\Disconnect.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_6007_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Configure\Flush.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_6008_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Configure\GetAdapters.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_6009_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Configure\GetBaudrates.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_6010_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Configure\Open.vi" KeyPath="no" Checksum="yes"/>
+        </Component>
+        <Component Id="DataMCAN120803Files" Directory="DataMCAN120803LvFolder" Guid="{D0B67FE0-CDE0-4C77-8A41-6B1C4C51DDB9}">
+          <File Id = "_7001_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Data\Data.mnu" KeyPath="no" Checksum="yes"/>
+          <File Id = "_7002_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Data\Read.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_7003_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Data\Write.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_7004_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Data\WriteSingleFrame.vi" KeyPath="no" Checksum="yes"/>
+        </Component>
+        <Component Id="ToolsMCAN120803Files" Directory="ToolsMCAN120803LvFolder" Guid="{69FAB483-4258-4295-90DF-18F125D254C5}">
+          <File Id = "_8001_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Tools\Tools.mnu" KeyPath="no" Checksum="yes"/>
+          <File Id = "_8002_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Tools\ByteArrayToHexStringArray.vi" KeyPath="no" Checksum="yes"/>
+          <File Id = "_8003_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Public\Tools\HexStringArrayToByteArray.vi" KeyPath="no" Checksum="yes"/>
+        </Component>
+ 
+    <Component Id="TypesMCAN120803Files" Directory="TypesMCAN120803LvFolder" Guid="{37EA30CB-17D9-423D-A983-42A625387E25}">
+      <File Id = "_9001_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Types\AdapterItemType.ctl" KeyPath="no" Checksum="yes"/>
+      <File Id = "_9002_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Types\BaudRateItemType.ctl" KeyPath="no" Checksum="yes"/>
+      <File Id = "_9003_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Types\CanHandleType.ctl" KeyPath="no" Checksum="yes"/>
+      <File Id = "_9004_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Types\MessageType.ctl" KeyPath="no" Checksum="yes"/>
+      <File Id = "_9005_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Types\StateType.ctl" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+    <!-- LabVIEW 2011 Examples -->
+    <Component Id="ExamplesMCAN120803Files" Directory="ExamplesMCAN120803LvFolder" Guid="{FC2BD949-2194-4EF6-937D-09322FD113C8}">
+      <File Id = "_1000_LV_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example Tool.ini" KeyPath="no" Checksum="yes">
+        <Shortcut Id ="_1000_LV_MCAN120803_link" Name="Konvolucio MCAN120803 Example Tool.ini" Directory="MyDocExMCAN120803LvFolder" />
+      </File>
+      <File Id = "_1001_LV_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example Tool.vi" KeyPath="no" Checksum="yes">
+        <Shortcut Id ="_1001_LV_MCAN120803_link" Name="Konvolucio MCAN120803 Example Tool.vi" Directory="MyDocExMCAN120803LvFolder" />
+      </File>
+      <File Id = "_1002_LV_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0001 Connect.vi" KeyPath="no" Checksum="yes">
+        <Shortcut Id ="_1002_LV_MCAN120803_link" Name="Konvolucio MCAN120803 Example_0001 Connect.vi" Directory="MyDocExMCAN120803LvFolder" />
+      </File>
+      <File Id = "_1003_LV_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0002 ConnectTo.vi" KeyPath="no" Checksum="yes">
+        <Shortcut Id ="_1003_LV_MCAN120803_link" Name="Konvolucio MCAN120803 Example_0002 ConnectTo.vi" Directory="MyDocExMCAN120803LvFolder" />
+      </File>
+      <File Id = "_1004_LV_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0003 ConnectBySerialNumber.vi" KeyPath="no" Checksum="yes">
+        <Shortcut Id ="_1004_LV_MCAN120803_link" Name="Konvolucio MCAN120803 Example_0003 ConnectBySerialNumber.vi" Directory="MyDocExMCAN120803LvFolder" />
+      </File>
+      <File Id = "_1005_LV_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0004 Write.vi" KeyPath="no" Checksum="yes">
+        <Shortcut Id ="_1005_LV_MCAN120803_link" Name="Konvolucio MCAN120803 Example_0004 Write.vi" Directory="MyDocExMCAN120803LvFolder" />
+      </File>
+      <File Id = "_1006_LV_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0005 WriteSingleFrame.vi" KeyPath="no" Checksum="yes">
+        <Shortcut Id ="_1006_LV_MCAN120803_link" Name="Konvolucio MCAN120803 Example_0005 WriteSingleFrame.vi" Directory="MyDocExMCAN120803LvFolder" />
+      </File>
+      <File Id = "_1007_LV_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0006 Read.vi" KeyPath="no" Checksum="yes">
+        <Shortcut Id ="_1007_LV_MCAN120803_link" Name="Konvolucio MCAN120803 Example_0006 Read.vi" Directory="MyDocExMCAN120803LvFolder" />
+      </File>
+
+      <File Id = "_1008_LV_MCAN120803" Source="$(var.LabView2011Directory)\Konvolucio MCAN120803\Examples\Konvolucio MCAN120803 Example_0007 Loopback.vi" KeyPath="no" Checksum="yes">
+        <Shortcut Id ="_1008_LV_MCAN120803_link" Name="Konvolucio MCAN120803 Example_0007 Loopback.vi" Directory="MyDocExMCAN120803LvFolder" />
+      </File>
+      
+    </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

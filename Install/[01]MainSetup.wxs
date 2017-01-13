@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+  xmlns:util="http://schemas.microsoft.com/wix/UtilExtension"
+  xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+  <!-- This is how we include wxi files -->
+  <?include $(sys.CURRENTDIR)Config.wxi ?>
+
+  <Product Id="$(var.ProductCode)"
+         Name="$(var.ProductName)"
+         Language="1033"
+         Version="$(var.VersionNumber)"
+         Manufacturer="$(var.Company)"
+         UpgradeCode="$(var.UpgradeCode)"> <!--A windows ez alapján azonosítja a szoftvert -->
+    
+    <Package Id='*'
+         Keywords='Installer'
+         Description="MCAN120803"
+         Comments='MCAN120803 CAN Bus Tool is a registered trademark of Konvolúció Bt.'
+         Manufacturer="$(var.Company)"
+         InstallerVersion='200' Languages='1033' Compressed='yes' SummaryCodepage='1252' InstallScope="perMachine"  />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <Media Id="1" Cabinet="media.cab" EmbedCab="yes" />
+  
+    <!--**************************************************************-->
+    <!--User Interface-->
+    <UIRef Id="WixUI_Mondo" />
+    <UIRef Id="WixUI_ErrorProgressText" />
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
+    <WixVariable Id="WixUILicenseRtf" Value="..\Resource\Installer\License.rtf" />
+    <WixVariable Id="WixUIBannerBmp" Value="..\Resource\Installer\Banner_500x70.jpg" />
+
+    <!--Beavatkozás a telepités folyamatába Minta-->
+    <InstallExecuteSequence>
+      <!--Reboot After Install-->
+      <!--Csak akkor ha driver-t is telepitett-->
+      <ScheduleReboot After='InstallFinalize' >
+        <![CDATA[
+          (&MCAN120803Feature =3) AND NOT(!MCAN120803Feature =3)
+        ]]>
+      </ScheduleReboot>
+      <!--MCAN120803 Install ***************************************************************************-->
+      <Custom  Action="Install_MCAN120803_x86_Driver"            Before='InstallFinalize'>
+        <![CDATA[(&MCAN120803Feature =3) AND NOT(!MCAN120803Feature =3) AND NOT VersionNT64 AND NOT REINSTALL ]]>
+      </Custom>
+      <Custom  Action="Install_MCAN120803_x64_Driver"            Before="InstallFinalize">
+        <![CDATA[(&MCAN120803Feature =3) AND NOT(!MCAN120803Feature =3) AND NOT REINSTALL]]>
+      </Custom>
+      <!--MCAN120803 Uninstall *************************************************************************-->
+      <Custom  Action="Uninstall_MCAN120803_x86_Driver"          After="RemoveRegistryValues">
+        <![CDATA[(Installed AND NOT VersionNT64 AND NOT REINSTALL) ]]>
+      </Custom>
+      <Custom  Action="Uninstall_MCAN120803_x64_Driver"          After="RemoveRegistryValues">
+        <![CDATA[(Installed AND VersionNT64 AND NOT REINSTALL)]]>
+      </Custom>
+    </InstallExecuteSequence>
+
+    <!-- Define App Icon -->
+    <Icon Id="AppAddRemove.ico" SourceFile="..\Resource\Installer\AppAddRemove.ico"/>
+    <!-- Define PDF Icon -->
+    <Icon Id="PDF.ico" SourceFile="..\Resource\Installer\pdf.ico"/>
+    <!-- Set Your Installer's Icon in Add/Remove Programs -->
+    <Property Id="ARPPRODUCTICON" Value="AppAddRemove.ico"/>
+    <!-- Set CompoanyLink' in Add/Remove Programs -->
+    <Property Id="ARPHELPLINK" Value="$(var.URL)" />
+    <Property Id="ARPURLINFOABOUT" Value="$(var.URL)"/>
+    <Property Id="ARPURLUPDATEINFO" Value="$(var.URL)"/>
+    <Property Id="ARPHELPTELEPHONE" Value="$(var.URL)"/>
+
+    <!--Telepités a Featureök válaszhatók telepítés közben-->
+    <!--//Level: A Feature kikapcsolt, ha 0. Alaphelyzetben 1.  -->
+    <Feature Id="Feature" Title="$(var.ProductName)" Level="1">
+      <Feature Id ="ApplicationFeature" Title="Application" Level="1">
+        <ComponentGroupRef Id="Application_Components"/>
+        <ComponentGroupRef Id="Manual_Components"/>
+        <ComponentGroupRef Id ="SampleProject_Components"/>
+        <ComponentRef Id="MCAN120803AppProgramsFolder_Component"/>
+      </Feature>
+      <Feature Id ="LabViewMCAN120803Feature" Title="LabVIEW 2011 Instrument Library" Level="1">
+        <ComponentGroupRef Id="LabView2011_Components"/>
+      </Feature>
+      <!--<Feature Id ="LabViewMUDS150628Feature" Title="LabVIEW 2011 MUDS150628 Plugin" Level="1">
+        <ComponentGroupRef Id="LabView2011_MUDS150628_Components"/>
+      </Feature>-->
+    </Feature>
+    <Feature Id ="CsharpExamplesFeature" Title="Csharp .NET4.0 Examples" Level="1">
+      <ComponentGroupRef Id="Csharp_Components"/>
+    </Feature>
+    <Feature Id ="TestStand2010ExamplesFeature" Title="TestStand 2010 Examples" Level="1">
+      <ComponentGroupRef Id="TestStandExamples2010_Components"/>
+    </Feature>    
+    <Feature Id="DriversFeature" Title="Drivers" Level="1" Description="Drivers">
+      <Feature Id ="MCAN120803Feature" Title="MCAN120803 USB Driver" Description="MCAN120803 USB-CAN Aadapter Driver" Level="1">
+        <ComponentGroupRef Id="Driver_Components"/>
+      </Feature>
+    </Feature>
+ 
+  </Product>
+  <Fragment>
+
+  </Fragment>
+</Wix>
+
+

@@ -1,0 +1,6 @@
+
+inf2cat /driver:D:\@@@!ProjectS\MCAN120803V00\Software.Setup\Resource\DriverFiles\MCAN120803\ /os:7_x86
+
+makecert -r -pe -n "CN=Konvolucio" -ss KonvolucioCertStore -sr LocalMachine
+
+SignTool sign /s KonvolucioCertStore /n "Konvolucio" /t http://timestamp.verisign.com/scripts/timestamp.dll D:\@@@!ProjectS\MCAN120803V00\Software.Setup\Resource\DriverFiles\MCAN120803\mcan120803.cat

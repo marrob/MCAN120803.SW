@@ -1,0 +1,52 @@
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\bin\Release\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\bin\Release\ConnectingBySerialNumber.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\bin\Release\ConnectingBySerialNumber.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\bin\Release\Konvolucio.MCAN120803.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\bin\Release\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\bin\Release\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\bin\Release\Konvolucio.MCAN120803.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\bin\Release\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\bin\Release\Konvolucio.WinUSB.xml
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\bin\Release\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\obj\x86\Release\Example_0005.Read.csprojResolveAssemblyReference.cache
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\obj\x86\Release\ConnectingBySerialNumber.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\Examples\Example_0005.Read\obj\x86\Release\ConnectingBySerialNumber.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Example_0005.Read.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Example_0005.Read.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Konvolucio.MCAN120803.API.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Konvolucio.MCAN120803.API.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Konvolucio.WinUSB.xml
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\obj\x86\Release\Example_0005.Read.csprojResolveAssemblyReference.cache
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\obj\x86\Release\Example_0005.Read.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\obj\x86\Release\Example_0005.Read.pdb
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Example_0005.Read.exe
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Example_0005.Read.pdb
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Konvolucio.MCAN120803.API.dll
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Konvolucio.MCAN120803.API.pdb
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\Konvolucio.WinUSB.xml
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\bin\Release\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\obj\x86\Release\Example_0005.Read.csprojResolveAssemblyReference.cache
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\obj\x86\Release\Example_0005.Read.exe
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0005.Read\obj\x86\Release\Example_0005.Read.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\bin\Release\Example_0005.Read.exe
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\bin\Release\Example_0005.Read.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\bin\Release\Konvolucio.MCAN120803.API.dll
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\bin\Release\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\bin\Release\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\bin\Release\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\obj\x86\Release\Example_0005.Read.exe
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\obj\x86\Release\Example_0005.Read.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\bin\Release\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\bin\Release\Konvolucio.MCAN120803.API.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\bin\Release\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\bin\Release\Konvolucio.WinUSB.xml
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0005.Read\obj\x86\Release\Example_0005.Read.csprojResolveAssemblyReference.cache

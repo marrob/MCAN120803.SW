@@ -1,0 +1,1400 @@
+<?xml version="1.0"?>
+<mcanxProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.konvolucio.hu/mcanx/2016/project/content">
+  <Version>1.0.0.0</Version>
+  <Settings>
+    <ProductName>0007</ProductName>
+    <ProductVersion>na</ProductVersion>
+    <ProductCode>na</ProductCode>
+    <CustomerName>na</CustomerName>
+    <CustomerCode>na</CustomerCode>
+    <Comment />
+    <DeviceName>Virtual Adapater (Transmitt Only)</DeviceName>
+    <Baudrate>5.000kBaud</Baudrate>
+    <Loopback>false</Loopback>
+    <Termination>false</Termination>
+    <ListenOnly>false</ListenOnly>
+    <NonAutoReTx>false</NonAutoReTx>
+    <FiltersEnabled>false</FiltersEnabled>
+    <LogEnabled>true</LogEnabled>
+    <TraceEnabled>true</TraceEnabled>
+    <PlayHistoryClearEnabled>true</PlayHistoryClearEnabled>
+    <AdapterStatisticsEnabled>true</AdapterStatisticsEnabled>
+    <MessageStatisticsEnabled>true</MessageStatisticsEnabled>
+    <RxMsgResolvingBySenderEnabled>true</RxMsgResolvingBySenderEnabled>
+    <TimestampFormat>HH:mm:ss.fff</TimestampFormat>
+    <ArbitrationIdFormat>{0:X8}</ArbitrationIdFormat>
+    <DataFormat>{0:X2} </DataFormat>
+  </Settings>
+  <Filters />
+  <CustomArbIdColumns>
+    <CustomArbIdColumn>
+      <Name>ExtArbIdColne</Name>
+      <Type>Extended</Type>
+      <StartBit>0</StartBit>
+      <LengthBit>29</LengthBit>
+      <Shift>0</Shift>
+      <Format>X8</Format>
+      <Description>Name:ExtArbIdColne, StartBit:0, LengthBit:29, Shift:0, Fomrat:X8</Description>
+    </CustomArbIdColumn>
+    <CustomArbIdColumn>
+      <Name>ExtArbIdMSBbit</Name>
+      <Type>Extended</Type>
+      <StartBit>28</StartBit>
+      <LengthBit>1</LengthBit>
+      <Shift>0</Shift>
+      <Format>X1</Format>
+      <Description>Name:ExtArbIdMSBbit, StartBit:28, LengthBit:1, Shift:0, Fomrat:X1</Description>
+    </CustomArbIdColumn>
+    <CustomArbIdColumn>
+      <Name>StdArbIdIDT1Reg</Name>
+      <Type>Standard</Type>
+      <StartBit>3</StartBit>
+      <LengthBit>8</LengthBit>
+      <Shift>0</Shift>
+      <Format>X2</Format>
+      <Description>Name:StdArbIdIDT1Reg, StartBit:3, LengthBit:8, Shift:0, Fomrat:X2</Description>
+    </CustomArbIdColumn>
+    <CustomArbIdColumn>
+      <Name>StdArbIdIDT2Reg</Name>
+      <Type>Standard</Type>
+      <StartBit>0</StartBit>
+      <LengthBit>3</LengthBit>
+      <Shift>5</Shift>
+      <Format>X2</Format>
+      <Description>Name:StdArbIdIDT2Reg, StartBit:0, LengthBit:3, Shift:5, Fomrat:X2</Description>
+    </CustomArbIdColumn>
+    <CustomArbIdColumn>
+      <Name>StdArbIdMSBbit</Name>
+      <Type>Standard</Type>
+      <StartBit>10</StartBit>
+      <LengthBit>1</LengthBit>
+      <Shift>0</Shift>
+      <Format>X1</Format>
+      <Description>Name:StdArbIdMSBbit, StartBit:10, LengthBit:1, Shift:0, Fomrat:X1</Description>
+    </CustomArbIdColumn>
+  </CustomArbIdColumns>
+  <TraceGridLayout>
+    <ColumnLayout>
+      <Name>columnIndex</Name>
+      <DisplayIndex>0</DisplayIndex>
+      <Width>58</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnName</Name>
+      <DisplayIndex>1</DisplayIndex>
+      <Width>60</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnTimestamp</Name>
+      <DisplayIndex>2</DisplayIndex>
+      <Width>83</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDirection</Name>
+      <DisplayIndex>3</DisplayIndex>
+      <Width>74</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnType</Name>
+      <DisplayIndex>4</DisplayIndex>
+      <Width>56</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnRemote</Name>
+      <DisplayIndex>5</DisplayIndex>
+      <Width>69</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnLength</Name>
+      <DisplayIndex>6</DisplayIndex>
+      <Width>65</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnArbitrationId</Name>
+      <DisplayIndex>7</DisplayIndex>
+      <Width>91</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnData</Name>
+      <DisplayIndex>8</DisplayIndex>
+      <Width>55</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDocumentation</Name>
+      <DisplayIndex>9</DisplayIndex>
+      <Width>104</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDescription</Name>
+      <DisplayIndex>10</DisplayIndex>
+      <Width>85</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>ExtArbIdColne</Name>
+      <DisplayIndex>11</DisplayIndex>
+      <Width>99</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>ExtArbIdMSBbit</Name>
+      <DisplayIndex>12</DisplayIndex>
+      <Width>100</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>StdArbIdIDT1Reg</Name>
+      <DisplayIndex>13</DisplayIndex>
+      <Width>1091</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>StdArbIdIDT2Reg</Name>
+      <DisplayIndex>14</DisplayIndex>
+      <Width>100</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>StdArbIdMSBbit</Name>
+      <DisplayIndex>15</DisplayIndex>
+      <Width>100</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+  </TraceGridLayout>
+  <LogGridLayout>
+    <ColumnLayout>
+      <Name>columnIndex</Name>
+      <DisplayIndex>0</DisplayIndex>
+      <Width>58</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnName</Name>
+      <DisplayIndex>1</DisplayIndex>
+      <Width>60</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnTimestamp</Name>
+      <DisplayIndex>10</DisplayIndex>
+      <Width>629</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDirection</Name>
+      <DisplayIndex>9</DisplayIndex>
+      <Width>439</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnType</Name>
+      <DisplayIndex>2</DisplayIndex>
+      <Width>56</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnRemote</Name>
+      <DisplayIndex>3</DisplayIndex>
+      <Width>69</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnLength</Name>
+      <DisplayIndex>4</DisplayIndex>
+      <Width>65</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnArbitrationId</Name>
+      <DisplayIndex>5</DisplayIndex>
+      <Width>91</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnData</Name>
+      <DisplayIndex>6</DisplayIndex>
+      <Width>55</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDocumentation</Name>
+      <DisplayIndex>7</DisplayIndex>
+      <Width>104</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDescription</Name>
+      <DisplayIndex>8</DisplayIndex>
+      <Width>85</Width>
+      <Visible>false</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>ExtArbIdColne</Name>
+      <DisplayIndex>11</DisplayIndex>
+      <Width>100</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>ExtArbIdMSBbit</Name>
+      <DisplayIndex>12</DisplayIndex>
+      <Width>100</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>StdArbIdIDT1Reg</Name>
+      <DisplayIndex>13</DisplayIndex>
+      <Width>296</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>StdArbIdIDT2Reg</Name>
+      <DisplayIndex>14</DisplayIndex>
+      <Width>100</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>StdArbIdMSBbit</Name>
+      <DisplayIndex>15</DisplayIndex>
+      <Width>100</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+  </LogGridLayout>
+  <StatisticsGridLayout>
+    <ColumnLayout>
+      <Name>columnIndex</Name>
+      <DisplayIndex>0</DisplayIndex>
+      <Width>58</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnName</Name>
+      <DisplayIndex>1</DisplayIndex>
+      <Width>60</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDirection</Name>
+      <DisplayIndex>2</DisplayIndex>
+      <Width>74</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnArbitrationId</Name>
+      <DisplayIndex>3</DisplayIndex>
+      <Width>91</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnType</Name>
+      <DisplayIndex>4</DisplayIndex>
+      <Width>56</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnRemote</Name>
+      <DisplayIndex>5</DisplayIndex>
+      <Width>69</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnRate</Name>
+      <DisplayIndex>6</DisplayIndex>
+      <Width>93</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnCount</Name>
+      <DisplayIndex>7</DisplayIndex>
+      <Width>60</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnPeriodTime</Name>
+      <DisplayIndex>8</DisplayIndex>
+      <Width>107</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDeltaMin</Name>
+      <DisplayIndex>9</DisplayIndex>
+      <Width>80</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDeltaMax</Name>
+      <DisplayIndex>10</DisplayIndex>
+      <Width>83</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnTimestamp</Name>
+      <DisplayIndex>11</DisplayIndex>
+      <Width>83</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnData</Name>
+      <DisplayIndex>12</DisplayIndex>
+      <Width>55</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnLength</Name>
+      <DisplayIndex>13</DisplayIndex>
+      <Width>65</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDeltaT</Name>
+      <DisplayIndex>14</DisplayIndex>
+      <Width>529</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+  </StatisticsGridLayout>
+  <FilterGridLayout>
+    <ColumnLayout>
+      <Name>columnIndex</Name>
+      <DisplayIndex>0</DisplayIndex>
+      <Width>58</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnName</Name>
+      <DisplayIndex>1</DisplayIndex>
+      <Width>60</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnEnabled</Name>
+      <DisplayIndex>2</DisplayIndex>
+      <Width>65</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnMaskOrArbId</Name>
+      <DisplayIndex>3</DisplayIndex>
+      <Width>132</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnArbitrationId</Name>
+      <DisplayIndex>4</DisplayIndex>
+      <Width>91</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnType</Name>
+      <DisplayIndex>5</DisplayIndex>
+      <Width>56</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnRemote</Name>
+      <DisplayIndex>6</DisplayIndex>
+      <Width>69</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnDirection</Name>
+      <DisplayIndex>7</DisplayIndex>
+      <Width>74</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+    <ColumnLayout>
+      <Name>columnMode</Name>
+      <DisplayIndex>8</DisplayIndex>
+      <Width>958</Width>
+      <Visible>true</Visible>
+    </ColumnLayout>
+  </FilterGridLayout>
+  <Tools>
+    <StorageToolItem>
+      <Name>Extended ArbId Colne Sample</Name>
+      <ToolType>CAN</ToolType>
+      <ToolObject xsi:type="ArrayOfStorageCanTxMessageItem">
+        <StorageCanTxMessageItem>
+          <Name>New_Message_1</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Mező paraméterei: &gt;&gt;Name:ExtArbIdColne, StartBit:0, LengthBit:29, Shift:0, Fomrat:X8&lt;&lt;</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_2</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Extended</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Az ArbitrationId mező 0.bitjétől a 28.bitjéig tartó részét módosítja/jelzi.</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_3</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Extended</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Értéke egyezzik az ArbitrationId [0x00000000..0x1FFFFFFF] tarományba eső értékével.</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_4</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Extended</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>1FFFFFFF</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Érték tartomámya: [0x00000000..0x1FFFFFFF], hossza 29 bit. Ettől nagyobb értéket nem fogad el.</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_5</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Ha az üzenet típusa(Type) Stanadard, akkor nem jelenik meg érték és nem is fogad el értéket.</Description>
+        </StorageCanTxMessageItem>
+      </ToolObject>
+    </StorageToolItem>
+    <StorageToolItem>
+      <Name>Extened ArbId MSB bit</Name>
+      <ToolType>CAN</ToolType>
+      <ToolObject xsi:type="ArrayOfStorageCanTxMessageItem">
+        <StorageCanTxMessageItem>
+          <Name>New_Message_1</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Mező paraméterei: &gt;&gt;Name:ExtArbIdMSBbit, StartBit:28, LengthBit:1, Shift:0, Fomrat:X1&lt;&lt;</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_2</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Extended</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>10000000</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Az ArbitrationId-ban a 28.-bitjének értékét módosítja/jelzi.</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_3</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Érték tartománya: [0..1], hossza 1 bit. Ettől nagyobb értéket nem fogad el.</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_4</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Extended</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>10000000</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Értéke 1, ha az ArbitartinId 28.bitje "1", a többi nem számít.[0x10000000]</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_5</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Extended</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>0FFFFFFF</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Értéke 0, ha az ArbitartinId 28.bitje "0", a többi nem számít.[0x0FFFFFFF]</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_6</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000000</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Ha az üzenet típusa(Type) Stanadard, akkor nem jelenik meg érték és nem is fogad el értéket.</Description>
+        </StorageCanTxMessageItem>
+      </ToolObject>
+    </StorageToolItem>
+    <StorageToolItem>
+      <Name>Standard ArbId IDT1 Reg</Name>
+      <ToolType>CAN</ToolType>
+      <ToolObject xsi:type="ArrayOfStorageCanTxMessageItem">
+        <StorageCanTxMessageItem>
+          <Name>New_Message_1</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Mező paraméterei: &gt;&gt;Name:StdArbIdIDT1Reg, StartBit:3, LengthBit:8, Shift:0, Fomrat:X2&lt;&lt;</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_2</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000008</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Az ArbitrationId mező 3.bitjétől a 10.bitjéig tartó részét módosítja/jelzi.</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_3</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000009</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Érték tartománya: [0..255], hossza 8 bit. Ettől nagyobb értéket nem fogad el.</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_4</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000008</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Értéke 0x01, ha az ArbitartinId 3.bitje "1", többi nem számít. [0x00000008]</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_5</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>000007F9</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Értéke 0xFF, ha az ArbitartinId 3.bitjétől a 10.bitjéig tartó rész "1", többi nem számít. [0x000007F9]</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_6</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000007</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Értéke 0x00, ha az ArbitartinId 3.bitjétől a 10.bitjéig tartó rész "0", többi nem számít. [0x00000007]</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_7</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Extended</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000000</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Ha az üzenet típusa(Type) Extended, akkor nem jelenik meg érték és nem is fogad el értéket.</Description>
+        </StorageCanTxMessageItem>
+      </ToolObject>
+    </StorageToolItem>
+    <StorageToolItem>
+      <Name>Standard ArbId IDT2 Reg</Name>
+      <ToolType>CAN</ToolType>
+      <ToolObject xsi:type="ArrayOfStorageCanTxMessageItem">
+        <StorageCanTxMessageItem>
+          <Name>New_Message_1</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Mező paraméterei: &gt;&gt;Name:StdArbIdIDT2Reg, StartBit:0, LengthBit:3, Shift:5, Fomrat:X2&lt;&lt;</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_2</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Az ArbitrationId mező 0.bitjétől a 2.bitjéig tartó részét módosítja/jelzi.</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_3</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Megjelenítés előtt a 0.bit-től a 2.bit-ig tartó részt balra tolja 5 bit-tel. [Shift éréke 5]</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_4</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000000</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Módosítás előtt a beírt értéket jobbra toja 5 bit-tel.</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_5</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000007</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Érték tartománya: [0x00..0xE0], hossza 3 bit. Ettől nagyobb értéket nem fogad el.</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_6</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Értéke 0x20 ha az ArbitrationId 0.-bit-je 1, a többi nem számít. [0x00000001]</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_7</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000004</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Értéke 0x80 ha az ArbitrationId 2.-bit-je 1, a többi nem számít. [0x00000004]</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_8</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000007</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Értéke 0xE0 ha az ArbitrationId 0.-bit-től  2.bit-ig 1, a többi nem számít. [0x00000007]</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_9</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Extended</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Ha az üzenet típusa(Type) Extended, akkor nem jelenik meg érték és nem is fogad el értéket.</Description>
+        </StorageCanTxMessageItem>
+      </ToolObject>
+    </StorageToolItem>
+    <StorageToolItem>
+      <Name>Standard ArbId MSB bit</Name>
+      <ToolType>CAN</ToolType>
+      <ToolObject xsi:type="ArrayOfStorageCanTxMessageItem">
+        <StorageCanTxMessageItem>
+          <Name>New_Message_1</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Mező paraméterei: &gt;&gt;Name:StdArbIdMSBbit, StartBit:10, LengthBit:1, Shift:0, Fomrat:X1&lt;&lt;</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_2</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Az ArbitrationId 10.-bitjének értékét módosítja/jelzi.</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_3</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Érték tartománya: [0..1], hossza 1 bit. Ettől nagyobb értéket nem fogad el.</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_4</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000400</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Értéke 1, ha az ArbitartinId 10.bitje "1", többi nem számít. [0x00000400]</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_5</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Standard</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>000003FF</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Értéke 0, ha az ArbitartinId 10.bitje "0", többi nem számít. [0x000003FF]</Description>
+        </StorageCanTxMessageItem>
+        <StorageCanTxMessageItem>
+          <Name>New_Message_6</Name>
+          <Key />
+          <IsPeriod>false</IsPeriod>
+          <PeriodTime>0</PeriodTime>
+          <Type>Extended</Type>
+          <Remote>false</Remote>
+          <ArbitrationId>00000001</ArbitrationId>
+          <Data>00 00 00 00 00 00 00 00</Data>
+          <Documentation />
+          <Description>Ha az üzenet típusa(Type) Extended, akkor nem jelenik meg érték és nem is fogad el értéket.</Description>
+        </StorageCanTxMessageItem>
+      </ToolObject>
+    </StorageToolItem>
+  </Tools>
+  <ToolsLayouts>
+    <ColumnLayoutCollection>
+      <ColumnLayoutItem>
+        <Name>columnIndex</Name>
+        <DisplayIndex>0</DisplayIndex>
+        <Width>58</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnName</Name>
+        <DisplayIndex>1</DisplayIndex>
+        <Width>98</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnClick</Name>
+        <DisplayIndex>2</DisplayIndex>
+        <Width>55</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnKey</Name>
+        <DisplayIndex>3</DisplayIndex>
+        <Width>50</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnIsPeriod</Name>
+        <DisplayIndex>4</DisplayIndex>
+        <Width>70</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnPeriodTime</Name>
+        <DisplayIndex>5</DisplayIndex>
+        <Width>107</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnType</Name>
+        <DisplayIndex>6</DisplayIndex>
+        <Width>86</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnRemote</Name>
+        <DisplayIndex>7</DisplayIndex>
+        <Width>69</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnLength</Name>
+        <DisplayIndex>8</DisplayIndex>
+        <Width>65</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnArbitrationId</Name>
+        <DisplayIndex>9</DisplayIndex>
+        <Width>91</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnData</Name>
+        <DisplayIndex>13</DisplayIndex>
+        <Width>168</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnDocumentation</Name>
+        <DisplayIndex>11</DisplayIndex>
+        <Width>104</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnDescription</Name>
+        <DisplayIndex>12</DisplayIndex>
+        <Width>1170</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>ExtArbIdColne</Name>
+        <DisplayIndex>10</DisplayIndex>
+        <Width>99</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>ExtArbIdMSBbit</Name>
+        <DisplayIndex>14</DisplayIndex>
+        <Width>106</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdIDT1Reg</Name>
+        <DisplayIndex>15</DisplayIndex>
+        <Width>117</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdIDT2Reg</Name>
+        <DisplayIndex>16</DisplayIndex>
+        <Width>100</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdMSBbit</Name>
+        <DisplayIndex>17</DisplayIndex>
+        <Width>100</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+    </ColumnLayoutCollection>
+    <ColumnLayoutCollection>
+      <ColumnLayoutItem>
+        <Name>columnIndex</Name>
+        <DisplayIndex>0</DisplayIndex>
+        <Width>58</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnName</Name>
+        <DisplayIndex>1</DisplayIndex>
+        <Width>98</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnClick</Name>
+        <DisplayIndex>2</DisplayIndex>
+        <Width>55</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnKey</Name>
+        <DisplayIndex>3</DisplayIndex>
+        <Width>50</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnIsPeriod</Name>
+        <DisplayIndex>4</DisplayIndex>
+        <Width>70</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnPeriodTime</Name>
+        <DisplayIndex>5</DisplayIndex>
+        <Width>107</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnType</Name>
+        <DisplayIndex>6</DisplayIndex>
+        <Width>86</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnRemote</Name>
+        <DisplayIndex>10</DisplayIndex>
+        <Width>69</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnLength</Name>
+        <DisplayIndex>11</DisplayIndex>
+        <Width>65</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnArbitrationId</Name>
+        <DisplayIndex>7</DisplayIndex>
+        <Width>91</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnData</Name>
+        <DisplayIndex>14</DisplayIndex>
+        <Width>168</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnDocumentation</Name>
+        <DisplayIndex>12</DisplayIndex>
+        <Width>104</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnDescription</Name>
+        <DisplayIndex>15</DisplayIndex>
+        <Width>1163</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>ExtArbIdColne</Name>
+        <DisplayIndex>8</DisplayIndex>
+        <Width>99</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>ExtArbIdMSBbit</Name>
+        <DisplayIndex>9</DisplayIndex>
+        <Width>106</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdIDT1Reg</Name>
+        <DisplayIndex>13</DisplayIndex>
+        <Width>117</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdIDT2Reg</Name>
+        <DisplayIndex>16</DisplayIndex>
+        <Width>100</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdMSBbit</Name>
+        <DisplayIndex>17</DisplayIndex>
+        <Width>100</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+    </ColumnLayoutCollection>
+    <ColumnLayoutCollection>
+      <ColumnLayoutItem>
+        <Name>columnIndex</Name>
+        <DisplayIndex>0</DisplayIndex>
+        <Width>58</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnName</Name>
+        <DisplayIndex>1</DisplayIndex>
+        <Width>98</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnClick</Name>
+        <DisplayIndex>2</DisplayIndex>
+        <Width>55</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnKey</Name>
+        <DisplayIndex>3</DisplayIndex>
+        <Width>50</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnIsPeriod</Name>
+        <DisplayIndex>4</DisplayIndex>
+        <Width>70</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnPeriodTime</Name>
+        <DisplayIndex>5</DisplayIndex>
+        <Width>107</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnType</Name>
+        <DisplayIndex>6</DisplayIndex>
+        <Width>86</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnRemote</Name>
+        <DisplayIndex>7</DisplayIndex>
+        <Width>69</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnLength</Name>
+        <DisplayIndex>8</DisplayIndex>
+        <Width>65</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnArbitrationId</Name>
+        <DisplayIndex>9</DisplayIndex>
+        <Width>91</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnData</Name>
+        <DisplayIndex>11</DisplayIndex>
+        <Width>168</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnDocumentation</Name>
+        <DisplayIndex>13</DisplayIndex>
+        <Width>104</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnDescription</Name>
+        <DisplayIndex>12</DisplayIndex>
+        <Width>1152</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>ExtArbIdColne</Name>
+        <DisplayIndex>14</DisplayIndex>
+        <Width>99</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>ExtArbIdMSBbit</Name>
+        <DisplayIndex>15</DisplayIndex>
+        <Width>106</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdIDT1Reg</Name>
+        <DisplayIndex>10</DisplayIndex>
+        <Width>117</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdIDT2Reg</Name>
+        <DisplayIndex>16</DisplayIndex>
+        <Width>100</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdMSBbit</Name>
+        <DisplayIndex>17</DisplayIndex>
+        <Width>100</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+    </ColumnLayoutCollection>
+    <ColumnLayoutCollection>
+      <ColumnLayoutItem>
+        <Name>columnIndex</Name>
+        <DisplayIndex>0</DisplayIndex>
+        <Width>58</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnName</Name>
+        <DisplayIndex>1</DisplayIndex>
+        <Width>98</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnClick</Name>
+        <DisplayIndex>2</DisplayIndex>
+        <Width>55</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnKey</Name>
+        <DisplayIndex>3</DisplayIndex>
+        <Width>50</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnIsPeriod</Name>
+        <DisplayIndex>4</DisplayIndex>
+        <Width>70</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnPeriodTime</Name>
+        <DisplayIndex>5</DisplayIndex>
+        <Width>107</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnType</Name>
+        <DisplayIndex>6</DisplayIndex>
+        <Width>86</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnRemote</Name>
+        <DisplayIndex>7</DisplayIndex>
+        <Width>69</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnLength</Name>
+        <DisplayIndex>8</DisplayIndex>
+        <Width>65</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnArbitrationId</Name>
+        <DisplayIndex>9</DisplayIndex>
+        <Width>91</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnData</Name>
+        <DisplayIndex>11</DisplayIndex>
+        <Width>168</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnDocumentation</Name>
+        <DisplayIndex>12</DisplayIndex>
+        <Width>104</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnDescription</Name>
+        <DisplayIndex>13</DisplayIndex>
+        <Width>1269</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>ExtArbIdColne</Name>
+        <DisplayIndex>14</DisplayIndex>
+        <Width>99</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>ExtArbIdMSBbit</Name>
+        <DisplayIndex>15</DisplayIndex>
+        <Width>106</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdIDT1Reg</Name>
+        <DisplayIndex>16</DisplayIndex>
+        <Width>1184</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdIDT2Reg</Name>
+        <DisplayIndex>10</DisplayIndex>
+        <Width>100</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdMSBbit</Name>
+        <DisplayIndex>17</DisplayIndex>
+        <Width>100</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+    </ColumnLayoutCollection>
+    <ColumnLayoutCollection>
+      <ColumnLayoutItem>
+        <Name>columnIndex</Name>
+        <DisplayIndex>0</DisplayIndex>
+        <Width>58</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnName</Name>
+        <DisplayIndex>1</DisplayIndex>
+        <Width>98</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnClick</Name>
+        <DisplayIndex>2</DisplayIndex>
+        <Width>55</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnKey</Name>
+        <DisplayIndex>3</DisplayIndex>
+        <Width>50</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnIsPeriod</Name>
+        <DisplayIndex>4</DisplayIndex>
+        <Width>70</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnPeriodTime</Name>
+        <DisplayIndex>5</DisplayIndex>
+        <Width>107</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnType</Name>
+        <DisplayIndex>6</DisplayIndex>
+        <Width>86</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnRemote</Name>
+        <DisplayIndex>7</DisplayIndex>
+        <Width>69</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnLength</Name>
+        <DisplayIndex>8</DisplayIndex>
+        <Width>65</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnArbitrationId</Name>
+        <DisplayIndex>9</DisplayIndex>
+        <Width>91</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnData</Name>
+        <DisplayIndex>11</DisplayIndex>
+        <Width>168</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnDocumentation</Name>
+        <DisplayIndex>12</DisplayIndex>
+        <Width>104</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>columnDescription</Name>
+        <DisplayIndex>13</DisplayIndex>
+        <Width>1169</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>ExtArbIdColne</Name>
+        <DisplayIndex>14</DisplayIndex>
+        <Width>99</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>ExtArbIdMSBbit</Name>
+        <DisplayIndex>15</DisplayIndex>
+        <Width>106</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdIDT1Reg</Name>
+        <DisplayIndex>16</DisplayIndex>
+        <Width>117</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdIDT2Reg</Name>
+        <DisplayIndex>17</DisplayIndex>
+        <Width>117</Width>
+        <Visible>false</Visible>
+      </ColumnLayoutItem>
+      <ColumnLayoutItem>
+        <Name>StdArbIdMSBbit</Name>
+        <DisplayIndex>10</DisplayIndex>
+        <Width>107</Width>
+        <Visible>true</Visible>
+      </ColumnLayoutItem>
+    </ColumnLayoutCollection>
+  </ToolsLayouts>
+</mcanxProject>

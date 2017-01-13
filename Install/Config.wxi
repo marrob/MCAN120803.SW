@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <?define Company = "Konvolúció Bt." ?>
+  <?define MajorVersion = "2"?>
+  <?define MinorVersion = "0"?>
+  <?define BuildNumber  = "28"?> <!-- VS: The default build number increments daily. -->
+  <!-- Revision is NOT used by WiX in the upgrade procedure -->
+  <!--The default revision number is the number of seconds since midnight local time, divided by 2.-->
+  <?define Revision = "60"?>
+  
+  <!-- Full version number to display -->
+  <?define VersionNumber  = "$(var.MajorVersion).$(var.MinorVersion).$(var.BuildNumber).$(var.Revision)"?>
+  <?define ProductName = "MCAN120803 - CAN Bus Tool"?>
+  <?define ProductCode = "{CA5779AE-036F-4AA0-967C-4D153671604A}"?>
+  
+  
+  <?define URL = "https://github.com/marrob"?>
+
+  <!--
+  Upgrade code HAS to be the same for all updates.
+  Once you've chosen it don't change it.
+  -->
+  <?define UpgradeCode = "{0D5F7448-3915-4E2B-851B-096DF757A187}"?>
+
+  <!--
+  The name of your application exe file. This will be used to kill the process when updating
+  and creating the desktop shortcut
+  -->
+  <?define ExeProcessName="SuperForm.MainApp.exe" ?>
+
+  <!--
+  CopyRight.
+  -->
+  <?define CopyrightMessage = "sa"?>
+
+
+  <!--
+  Global Paths.
+  -->
+  <?define AppDirectory               = "..\Application\Konvolucio.MCAN120803.GUI\bin\Release"?>
+  <?define AppResourceDirectory       = "..\Resource"?>
+  <?define LabView2011Directory       = "..\LabVIEW 2011"?>
+  <?define TestStand2010Directory     = "..\TestStand 2010 SP1"?>
+  <?define ExamplesDirectory          = "..\Csharp.NET4.0 Examples"?>
+  <?define SamplesDirectory           = "..\Samples"?>
+  
+  
+</Include>
+

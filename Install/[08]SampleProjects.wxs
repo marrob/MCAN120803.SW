@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+
+    <!-- This is how we include wxi files -->
+    <?include $(sys.CURRENTDIR)Config.wxi ?>
+    
+    <DirectoryRef Id="MyDocAppFolder">
+      <Directory Id="SampleProjectsFolder" Name="Sample Projects">
+        <Directory Id ="SamplePrj0001Folder" Name="0001"/>
+        <Directory Id ="SamplePrj0002Folder" Name="0002"/>
+        <Directory Id ="SamplePrj0003Folder" Name="0003"/>
+        <Directory Id ="SamplePrj0004Folder" Name="0004"/>
+        
+        <Directory Id ="SamplePrj0005Folder" Name="0005">
+          <Directory Id ="SampleLogStorage0005Folder" Name="Log Storage for 0005"/>
+        </Directory>
+
+        <Directory Id ="SamplePrj0006Folder" Name="0006">
+          <Directory Id ="SampleLogStorage0006Folder" Name="Log Storage for 0006"/>
+        </Directory>
+
+        <Directory Id ="SamplePrj0007Folder" Name="0007">
+          <Directory Id ="SampleLogStorage0007Folder" Name="Log Storage for 0007"/>
+        </Directory>
+
+        <Directory Id ="SamplePrj0008Folder" Name="0008">
+          <Directory Id ="SampleLogStorage0008Folder" Name="Log Storage for 0008"/>
+        </Directory>
+
+        <Directory Id ="SamplePrj0009Folder" Name="0009">
+          <Directory Id ="SampleLogStorage0009Folder" Name="Log Storage for 0009"/>
+        </Directory>
+
+        <Directory Id ="SamplePrj0010Folder" Name="0010">
+          <Directory Id ="SampleLogStorage0010Folder" Name="Log Storage for 0010"/>
+        </Directory>
+
+        <Directory Id ="SamplePrjCXMCU3Folder" Name="CXMCU3">
+          <Directory Id ="SampleLogStorageCXMCU3Folder" Name="Log Storage for CXMCU3"/>
+        </Directory>
+        
+        <Directory Id ="SamplePrjCP1540Folder" Name="CP1540"/>
+        
+        <Directory Id ="SamplePrjOMRONGRT1DRTFolder" Name="OMRON GRT1-DRT">
+          <Directory Id ="SampleLogStorageOMRONGRT1DRTFolder" Name="Log Storage for OMRON GRT1-DRT"/>
+        </Directory>
+      
+      </Directory>
+    </DirectoryRef>
+ 
+  <ComponentGroup Id="SampleProject_Components">
+    
+    <Component Id="SamplePrj0001" Directory="SamplePrj0001Folder" Guid="{0F5417FB-D9B5-4C49-AA9E-B70210A45577}">
+      <File Source="$(var.SamplesDirectory)\0001\0001.mcanx" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+    <Component Id="SamplePrj0002" Directory="SamplePrj0002Folder" Guid="{6703450C-3EFD-4D31-AEDC-644196334857}">
+      <File Source="$(var.SamplesDirectory)\0002\0002.mcanx" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+    <Component Id="SamplePrj0003" Directory="SamplePrj0003Folder" Guid="{2E206853-DFD8-4035-82D4-6C52D46F031F}">
+      <File Source="$(var.SamplesDirectory)\0003\0003.mcanx" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+    <Component Id="SamplePrj0004" Directory="SamplePrj0004Folder" Guid="{6D1A3210-0BDA-4854-8E52-8E438F2810B7}">
+      <File Source="$(var.SamplesDirectory)\0004\0004.mcanx" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+    <Component Id="SamplePrj0005" Directory="SamplePrj0005Folder" Guid="{C52DE792-D0F6-4D25-AF8A-DBB559FD035E}">
+      <File Source="$(var.SamplesDirectory)\0005\0005.mcanx" KeyPath="no" Checksum="yes"/>
+    </Component>
+    <Component Id="SampleLogStorage0005" Directory="SampleLogStorage0005Folder" Guid="{8133C6EF-D009-4F76-9D58-D0FEDD816337}">
+      <File Name="0005_0001.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0002.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0003.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0004.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0005.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0006.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0007.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0008.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0009.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0010.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0011.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0012.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0013.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0014.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0015.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0016.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0017.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0018.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0019.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0020.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0021.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0022.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0023.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0024.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0025.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0026.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0027.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0028.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0029.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0030.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0031.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0032.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0033.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0034.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0035.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0036.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0037.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0038.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0039.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0005_0040.s3db" Source="$(var.SamplesDirectory)\0005\Log Storage for 0005\_0001_0005_CreateNew_Insert_2_Record.s3db" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+    <Component Id="SamplePrj0006" Directory="SamplePrj0006Folder" Guid="{5581E4EE-BF34-45B2-B860-7A83D78E9752}">
+      <File Source="$(var.SamplesDirectory)\0006\0006.mcanx" KeyPath="no" Checksum="yes"/>
+    </Component>
+    <Component Id="SampleLogStorage0006" Directory="SampleLogStorage0006Folder" Guid="{8C47CD74-317C-4127-8FC5-9E4DBB1A4BA1}">
+      <File Name="0006_0001.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0002.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0003.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0004.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0005.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0006.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0007.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0008.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0009.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0010.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0011.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0012.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0013.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0014.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0015.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0016.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0017.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0018.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0019.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0020.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0021.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0022.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0023.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0024.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0025.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0026.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0027.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0028.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0029.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0030.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0031.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0032.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0033.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0034.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0035.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0036.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0037.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0038.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0039.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+      <File Name="0006_0040.s3db" Source="$(var.SamplesDirectory)\0006\Log Storage for 0006\_0001_0006_CreateNew_Insert_1000_Record.s3db" KeyPath="no" Checksum="yes"/>
+
+    </Component>
+
+    <Component Id="SamplePrj0007" Directory="SamplePrj0007Folder" Guid="{3B7F0168-3CDC-484C-9322-99F3C5C76AAD}">
+      <File Source="$(var.SamplesDirectory)\0007\0007.mcanx" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+
+    <Component Id="SamplePrj0008" Directory="SamplePrj0008Folder" Guid="{F17A1B62-34BC-4A46-A289-3CDDE86949D3}">
+      <File Source="$(var.SamplesDirectory)\0008\0008.mcanx" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+    <Component Id="SamplePrj0009" Directory="SamplePrj0009Folder" Guid="{3FB4CBBE-2EB7-482F-B5C3-2DE5E6173EC8}">
+      <File Source="$(var.SamplesDirectory)\0009\0009.mcanx" KeyPath="no" Checksum="yes"/>
+    </Component>
+
+    <Component Id="SamplePrj0010" Directory="SamplePrj0010Folder" Guid="{6FD04B70-B0EA-4878-9CEE-DE259C3ADDC8}">
+      <File Source="$(var.SamplesDirectory)\0010\0010.mcanx" KeyPath="no" Checksum="yes"/>
+    </Component>
+    
+    
+    
+      <Component Id="SamplePrjCXMCU3" Directory="SamplePrjCXMCU3Folder" Guid="{203CE98B-6200-4077-BD6B-1E45DEADBBDD}">
+      <File Source="$(var.SamplesDirectory)\CXMCU3\CXMCU3.mcanx" KeyPath="no" Checksum="yes"/>
+      <File Source="$(var.SamplesDirectory)\CXMCU3\0001_ShowMe.JPG" KeyPath="no" Checksum="yes"/>
+      <File Source="$(var.SamplesDirectory)\CXMCU3\0002_ShowMe.JPG" KeyPath="no" Checksum="yes"/>
+      <File Source="$(var.SamplesDirectory)\CXMCU3\0003_ShowMe.JPG" KeyPath="no" Checksum="yes"/>
+    </Component>
+    <Component Id="SampleLogStorageCXMCU3" Directory="SampleLogStorageCXMCU3Folder" Guid="{091BF605-282B-4524-BA0F-5FCED8317A07}">
+      <File Source="$(var.SamplesDirectory)\CXMCU3\Log Storage for CXMCU3\Sample_0001.s3db" KeyPath="no" Checksum="yes"/>
+    </Component>
+    
+    <Component Id="SamplePrjCP1540" Directory="SamplePrjCP1540Folder" Guid="{D6D88AE7-9D1B-4C89-92A0-B34CE43BB0F6}">
+      <File Source="$(var.SamplesDirectory)\CP1540\CP1540.mcanx" KeyPath="no" Checksum="yes"/>
+    </Component>
+    
+    <Component Id="SamplePrjOMRONGRT1DRT" Directory="SamplePrjOMRONGRT1DRTFolder" Guid="{3A8507D8-2D68-47D6-ABBA-2704F1CEDA4A}">
+      <File Source="$(var.SamplesDirectory)\OMRON GRT1-DRT\OMRON GRT1-DRT.mcanx" KeyPath="no" Checksum="yes"/>
+    </Component>
+    <Component Id="SampleLogStorageOMRONGRT1DRT" Directory="SampleLogStorageOMRONGRT1DRTFolder" Guid="{4FF5487F-8657-4F12-9958-8498885118B7}">
+      <File Source="$(var.SamplesDirectory)\OMRON GRT1-DRT\Log Storage for OMRON GRT1-DRT\160629 151909 - Read Fragmanted Frame.s3db" KeyPath="no" Checksum="yes"/>
+      <File Source="$(var.SamplesDirectory)\OMRON GRT1-DRT\Log Storage for OMRON GRT1-DRT\160628 174955 - Allocate_GetSerialNumber.s3db" KeyPath="no" Checksum="yes"/>
+    </Component>
+    
+    </ComponentGroup>
+  </Fragment>
+</Wix>

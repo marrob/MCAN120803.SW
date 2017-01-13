@@ -1,0 +1,3 @@
+"Index";"Name";"Arbitration Id";"Data";"Documentation";"Description";
+"2";"DTOOL_to_BIC";"00000714";"30 00 64 10 00 00 00 00";"8.7.6.7";"Sequence to check ICT_BYTE status Frame #2";
+"1";"DTOOL_to_BIC";"00000714";"03 22 0C 71 00 00 00 00";"8.7.6.7";"Sequence to check ICT_BYTE status Frame #1";

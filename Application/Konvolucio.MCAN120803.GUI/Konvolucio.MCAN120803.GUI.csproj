@@ -1,0 +1,1212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{056B5BF1-4665-497F-B60D-6217F0E60AD4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Konvolucio.MCAN120803.GUI</RootNamespace>
+    <AssemblyName>Konvolucio.MCAN120803.GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AppAddRemove.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Konvolucio.MCAN120803.GUI.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>..\..\Resource\EPPlus\EPPlus 4.1\DotNet4\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="nunit.engine, Version=3.4.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUnit3TestAdapter.3.4.1\lib\nunit.engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.engine.api, Version=3.0.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUnit3TestAdapter.3.4.1\lib\nunit.engine.api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\NUnit.org\framework\3.4.1.0\net-4.0\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="NUnit3.TestAdapter, Version=3.4.1.0, Culture=neutral, PublicKeyToken=4cb40d35494691ac, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUnit3TestAdapter.3.4.1\lib\NUnit3.TestAdapter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SQLite, Version=1.0.101.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\System.Data.SQLite\2010\GAC\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppEvents\FileChangingType.cs" />
+    <Compile Include="AppEvents\LogFileCollectionAppEvent.cs" />
+    <Compile Include="AppModules\Adapters\View\AdapterParametersView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Adapters\View\AdapterParametersView.Designer.cs">
+      <DependentUpon>AdapterParametersView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\AppDiag\Commands\OffCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\AppDiag\Commands\SaveCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Baudrate\BaurateEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppModules\Baudrate\BaurateEditorForm.Designer.cs">
+      <DependentUpon>BaurateEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Baudrate\Model\BaudrateCalculator.cs" />
+    <Compile Include="AppModules\Baudrate\Model\TimeSegemnts.cs" />
+    <Compile Include="AppModules\Baudrate\View\BaudrateEditorView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Baudrate\View\BaudrateEditorView.Designer.cs">
+      <DependentUpon>BaudrateEditorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Filter\Commands\CopyRowsCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Filter\Commands\CutRowsCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Filter\Commands\PasteRowsCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\View\ILogDescriptionEditorForm.cs" />
+    <Compile Include="AppModules\Log\View\ILogDescriptionView.cs" />
+    <Compile Include="AppModules\Log\View\IRenameForm.cs" />
+    <Compile Include="AppModules\Tools\Commands\DeleteToolNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Tools\Commands\NewToolNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Tools\Commands\RenameToolNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Tools\Model\ToolTableItem.cs" />
+    <Compile Include="AppModules\Tools\Model\IToolItem.cs" />
+    <Compile Include="AppModules\Tools\Model\ToolTableCollection.cs" />
+    <Compile Include="AppModules\Tools\Presenter.cs" />
+    <Compile Include="AppModules\Tools\TreeNodes\TopTreeNode.cs" />
+    <Compile Include="AppModules\Tools\View\IRenameForm.cs" />
+    <Compile Include="AppModules\Tools\View\INewForm.cs" />
+    <Compile Include="AppModules\Tools\View\NewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppModules\Tools\View\NewForm.Designer.cs">
+      <DependentUpon>NewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Tools\View\RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppModules\Tools\View\RenameForm.Designer.cs">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Filter\Commands\DefaultNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Filter\Commands\DefaultCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Filter\Commands\EnabledCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Filter\Commands\DeleteRowsCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Filter\Commands\ExportCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Filter\TreeNodes\FilterNameTreeNode.cs" />
+    <Compile Include="AppModules\Filter\UnitTest\UnitTest_Filters.cs" />
+    <Compile Include="AppModules\CanTx\Model\CanTxMessageItem.cs" />
+    <Compile Include="AppModules\Tracer\Commands\FullscreenCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Tracer\Commands\AutoSizeAllCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Tracer\Commands\AutoScrolllCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Tracer\Commands\EnabledCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\CommonCanMessage.cs" />
+    <Compile Include="Common\MaskOrArbId.cs" />
+    <Compile Include="AppModules\Filter\Presenter.cs" />
+    <Compile Include="AppModules\Filter\View\FiltersGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Filter\View\FiltersGridView.Designer.cs">
+      <DependentUpon>FiltersGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Filter\View\IFiltersGridView.cs" />
+    <Compile Include="AppModules\Export\Model\CsvOptions.cs" />
+    <Compile Include="AppModules\Export\Model\XlsxOptions.cs" />
+    <Compile Include="AppModules\Export\Model\IExporter.cs" />
+    <Compile Include="AppModules\Export\View\IExportForm.cs" />
+    <Compile Include="AppModules\Export\View\ICsvOptionsView.cs" />
+    <Compile Include="AppModules\Export\View\IXlsxOptionsView.cs" />
+    <Compile Include="AppModules\Export\View\IXmlOptionsView.cs" />
+    <Compile Include="AppModules\Export\View\XmlOptionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Export\View\XmlOptionsView.Designer.cs">
+      <DependentUpon>XmlOptionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Export\View\CsvOptionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Export\View\CsvOptionsView.Designer.cs">
+      <DependentUpon>CsvOptionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Log\Commands\ExportCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\CanTx\Commands\CopyRowsCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\CanTx\Commands\ExportCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Export\Model\ToXlsx.cs" />
+    <Compile Include="AppModules\Export\Model\ToXml.cs" />
+    <Compile Include="AppModules\Export\Model\ExportTable.cs" />
+    <Compile Include="AppModules\Export\Model\ToCsv.cs" />
+    <Compile Include="AppModules\Export\Model\IExportTable.cs" />
+    <Compile Include="AppModules\Export\View\ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppModules\Export\View\ExportForm.Designer.cs">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Log\Commands\DeleteFileCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\Commands\ReloadCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\Commands\EnabledCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\Presenter.cs" />
+    <Compile Include="AppModules\Log\View\ILogGridView.cs" />
+    <Compile Include="AppModules\Main\Commands\ExpandMainSectionCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\Model\IShowingParameters.cs" />
+    <Compile Include="AppModules\Options\Model\IOptionPage.cs" />
+    <Compile Include="AppModules\CanTx\UnitTest\UintTest_MessageName.cs" />
+    <Compile Include="AppModules\CanTx\View\ISenderGridView.cs" />
+    <Compile Include="AppModules\Statistics\Adapter\Commands\EnabledNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Adapter\Commands\DefaultNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Adapter\TreeNodes\AdapterStatisticsTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\Commands\ClearCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Message\Commands\ClearNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Message\Commands\DefaultNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Message\Commands\EnabledCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Message\Commands\EnabledNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Adapters\Commands\EnabledCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Message\Commands\ExportCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Message\Commands\DefaultCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Message\View\IStatisticsGridView.cs" />
+    <Compile Include="AppModules\Statistics\Message\View\StatisticsGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Message\View\StatisticsGridView.Designer.cs">
+      <DependentUpon>StatisticsGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Message\Presenter.cs" />
+    <Compile Include="AppModules\Tracer\Presenter.cs" />
+    <Compile Include="AppModules\Tracer\View\ITraceGridView.cs" />
+    <Compile Include="Common\CanMessageItemForClipboard.cs" />
+    <Compile Include="Common\ToolTypes.cs" />
+    <Compile Include="DataStorage\FileStorage.cs" />
+    <Compile Include="DataStorage\StorageCanTxMessageCollection.cs" />
+    <Compile Include="DataStorage\StorageCustomArbIdColumnCollection.cs" />
+    <Compile Include="DataStorage\StorageCustomArbIdColumnItem.cs" />
+    <Compile Include="DataStorage\StorageMessageFilterCollection.cs" />
+    <Compile Include="DataStorage\StorageMessageFilterItem.cs" />
+    <Compile Include="DataStorage\StorageToolCollection.cs" />
+    <Compile Include="DataStorage\StorageToolItem.cs" />
+    <Compile Include="DataStorage\StroageParameters.cs" />
+    <Compile Include="Extensions\CustomArbIdToDataGridView.cs" />
+    <Compile Include="IFooTest.cs" />
+    <Compile Include="Common\CustomArbIdColumnItem.cs" />
+    <Compile Include="AppModules\Options\OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppModules\Options\OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Options\View\AboutView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Options\View\AboutView.Designer.cs">
+      <DependentUpon>AboutView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Options\View\ProjectlCustomArbIdColumnsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Options\View\ProjectlCustomArbIdColumnsView.Designer.cs">
+      <DependentUpon>ProjectlCustomArbIdColumnsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Options\View\ProjectFuctionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Options\View\ProjectFuctionsView.Designer.cs">
+      <DependentUpon>ProjectFuctionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Options\View\DeveloperView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Options\View\DeveloperView.Designer.cs">
+      <DependentUpon>DeveloperView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Options\View\GeneralView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Options\View\GeneralView.Designer.cs">
+      <DependentUpon>GeneralView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Options\View\NavigatorTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Options\View\NavigatorTreeView.Designer.cs">
+      <DependentUpon>NavigatorTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Options\View\ProjectRepresentationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Options\View\ProjectRepresentationView.Designer.cs">
+      <DependentUpon>ProjectRepresentationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Options\View\ProjectView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Options\View\ProjectView.Designer.cs">
+      <DependentUpon>ProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Message\Model\MessageStatistics.cs" />
+    <Compile Include="AppModules\Filter\Commands\EnabledNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ArbitrationIdType.cs" />
+    <Compile Include="Common\CustomArbIdColumnCollection.cs" />
+    <Compile Include="Converters\CustomDataConversion.cs" />
+    <Compile Include="Converters\MessageNameConverter.cs" />
+    <Compile Include="AppModules\Adapters\AdapterService.cs" />
+    <Compile Include="AppModules\Adapters\TreeNodes\AdapterTreeNode.cs" />
+    <Compile Include="AppModules\AppDiag\Model\AppDiagnosticsEventArgs.cs" />
+    <Compile Include="AppModules\AppDiag\Model\AppDiagnosticsService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppModules\AppDiag\View\AppDiagnosticsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\AppDiag\View\AppDiagnosticsView.Designer.cs">
+      <DependentUpon>AppDiagnosticsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\AppDiag\Commands\ClearCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Converters\UInt32MaskConverter.cs" />
+    <Compile Include="AppModules\Main\Commands\ExpandAllSectionCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\Culture\CultureText.cs" />
+    <Compile Include="Services\Culture\CultureService.cs" />
+    <Compile Include="DataStorage\DataObjects.cs" />
+    <Compile Include="DataStorage\StorageChanegdEventArgs.cs" />
+    <Compile Include="AppModules\Main\Model\ShowingParameters.cs" />
+    <Compile Include="AppEvents\AdapterChangedAppEvent.cs" />
+    <Compile Include="AppEvents\StorageAppEvent.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="AppEvents\LogFileAppEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppEvents\LogSelectionChangedAppEvent.cs" />
+    <Compile Include="AppEvents\CultureChangedAppEvent.cs" />
+    <Compile Include="AppEvents\PlayAppEvent.cs" />
+    <Compile Include="AppEvents\StopAppEvent.cs" />
+    <Compile Include="Services\ErrorHandlerService.cs" />
+    <Compile Include="AppGuiSettings\GuiSettings.LogView.cs" />
+    <Compile Include="AppModules\Main\View\MainView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\View\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventAggregator\EventAggregator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataStorage\OpenFileView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Consistency\ConsistencyCheck.cs" />
+    <Compile Include="AppModules\Log\View\LogView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\View\LogView.Designer.cs">
+      <DependentUpon>LogView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PathService.cs" />
+    <Compile Include="AppGuiSettings\GuiSettings.cs" />
+    <Compile Include="CreateMessage\CreateMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateMessage\CreateMessage.Designer.cs">
+      <DependentUpon>CreateMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Log\Commands\EditDescriptionCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\View\LogDescriptionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\View\LogDescriptionEditorForm.Designer.cs">
+      <DependentUpon>LogDescriptionEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Log\View\LogDescriptionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\View\LogDescriptionView.Designer.cs">
+      <DependentUpon>LogDescriptionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Main\View\TraceSenderView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\View\TraceSenderView.Designer.cs">
+      <DependentUpon>TraceSenderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\TimerService.cs" />
+    <Compile Include="UnitTest\UintTest_Xml_Serializable.cs" />
+    <Compile Include="UnitTest\UintTest_Cast.cs" />
+    <Compile Include="UnitTest\UintTest_MessageSender.cs" />
+    <Compile Include="UnitTest\UintTest_Timers.cs" />
+    <Compile Include="UnitTest\UintTest_Event.cs" />
+    <Compile Include="AppModules\Adapters\UnitTest\UintTest_Adapter.cs" />
+    <Compile Include="AppModules\Export\UnitTest\UnitTest_Export.cs" />
+    <Compile Include="UnitTest\UnitTest_Abstract_Override_Protected.cs" />
+    <Compile Include="UnitTest\UnitTest_Class.cs" />
+    <Compile Include="UnitTest\UnitTest_Clipboard.cs" />
+    <Compile Include="UnitTest\UnitTest_Collection_Lambda_Interface.cs" />
+    <Compile Include="UnitTest\UnitTest_FactoryStartStopThread.cs" />
+    <Compile Include="AppModules\Baudrate\UnitTest\UintTest_BaudRate.cs" />
+    <Compile Include="Consistency\UnitTest\UnitTest_Consistency.cs" />
+    <Compile Include="UnitTest\UnitTest_Converters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\UnitTest_CustomArbitrationIdColumns.cs" />
+    <Compile Include="UnitTest\UnitTest_CustomIFormatProvider.cs" />
+    <Compile Include="EventAggregator\UnitTest\UnitTest_EventAggregator.cs" />
+    <Compile Include="UnitTest\UnitTest_InstanceCopyHardCopyClone.cs" />
+    <Compile Include="UnitTest\UnitTest_OfficeOpenXml.cs" />
+    <Compile Include="UnitTest\UnitTest_PropertyChanging.cs" />
+    <Compile Include="UnitTest\UnitTest_SyncCollection.cs" />
+    <Compile Include="UnitTest\UnitTest_PropertyDefaultValue.cs" />
+    <Compile Include="UnitTest\UintTest_GuiSettings.cs" />
+    <Compile Include="UnitTest\UintTest_SqlLiteConnection.cs" />
+    <Compile Include="UnitTest\UnitTest_Collection_ListChanging.cs" />
+    <Compile Include="AppModules\Workspace\Service\WorkspaceService.cs" />
+    <Compile Include="AppModules\Workspace\Service\WorkspaceService.Storage.cs" />
+    <Compile Include="AppModules\Workspace\Service\WorkspaceService.StorageWorkspaceCollection.cs" />
+    <Compile Include="AppModules\Workspace\Service\WorkspaceService.StorageWorkspaceItem.cs" />
+    <Compile Include="AppModules\Log\Commands\DeleteMessageCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\Commands\RenameFileCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\CanTx\Commands\CutRowsCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\CanTx\Commands\PasteRowsCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\Commands\BackCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\Commands\HamburgerCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\Commands\LogCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppEvents\TreeViewSelectionChangedAppEvent.cs" />
+    <Compile Include="AppModules\Adapters\Commands\AdapterComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Adapters\Commands\BaudrateComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Adapters\Commands\NonAutoReTxCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Adapters\Commands\LoopbackCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Filter\Commands\NewCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\Commands\CollapseAllSectionCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Workspace\Commands\OpenWorkspaceCommand.cs" />
+    <Compile Include="AppModules\Log\Model\LogFileMessageStatistics.cs" />
+    <Compile Include="AppModules\Log\Model\LogFileConnection.cs" />
+    <Compile Include="AppModules\Export\Model\ExporterCollection.cs" />
+    <Compile Include="AppModules\Log\Model\LogFileCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\Model\LogFileItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\Model\LogFileInfo.cs" />
+    <Compile Include="AppModules\Log\Model\LogMessageItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\Model\LogFileMessageCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTest\UnitTest_BeginInvoke.cs" />
+    <Compile Include="UnitTest\UnitTest_BackgoroundWorker.cs" />
+    <Compile Include="UnitTest\UnitTest_Log.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="AppModules\Export\View\XlsxOptionsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Export\View\XlsxOptionsView.Designer.cs">
+      <DependentUpon>XlsxOptionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Log\View\RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\View\RenameForm.Designer.cs">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Adapter\Model\DircectionStatistics.cs" />
+    <Compile Include="AppModules\Filter\Model\MessageFilterCollection.cs" />
+    <Compile Include="AppModules\Filter\Model\MessageFilterItem.cs" />
+    <Compile Include="Common\MessageFilterMode.cs" />
+    <Compile Include="AppModules\Statistics\Message\Model\MessageStatisticsItem.cs" />
+    <Compile Include="Common\MessageDirection.cs" />
+    <Compile Include="AppModules\Statistics\Message\Model\MessageStatisticsCollection.cs" />
+    <Compile Include="AppModules\Workspace\Models\WorkspaceCollection.cs" />
+    <Compile Include="AppModules\Workspace\Models\WorkspaceItem.cs" />
+    <Compile Include="UnitTest\UintTest_Email.cs" />
+    <Compile Include="AppModules\Log\View\LogGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Log\View\LogGridView.Designer.cs">
+      <DependentUpon>LogGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Log\TreeNodes\LogArbitrationIdTreeNode.cs" />
+    <Compile Include="AppModules\Log\TreeNodes\LogMessageNameTreeNode.cs" />
+    <Compile Include="AppModules\Log\TreeNodes\LogMessagesTreeNode.cs" />
+    <Compile Include="AppModules\Log\TreeNodes\LogTransmittedTreeNode.cs" />
+    <Compile Include="AppModules\Log\TreeNodes\LogFileNameTreeNode.cs" />
+    <Compile Include="AppModules\Log\TreeNodes\LogReceivedTreeNode.cs" />
+    <Compile Include="AppModules\Log\TreeNodes\LogTopTreeNode.cs" />
+    <Compile Include="AppModules\Main\View\SelectAdapterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\View\SelectAdapterForm.Designer.cs">
+      <DependentUpon>SelectAdapterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ErrorHandlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ErrorHandlerForm.Designer.cs">
+      <DependentUpon>ErrorHandlerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Main\View\Form1.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Main\View\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ProgressDialog.Designer.cs">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Main\View\SaveAsProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\View\SaveAsProjectForm.Designer.cs">
+      <DependentUpon>SaveAsProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Main\View\SaveMessageBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\Commands\OpenCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\Commands\SaveAsCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\Commands\SaveCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\Commands\NewCommand.cs">
+      <ExcludeFromStyleCop>False</ExcludeFromStyleCop>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Adapters\Commands\ListenOnlyCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Adapters\Commands\TerminationCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\CanTx\Commands\NewRowCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\CanTx\Commands\DeleteCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\Commands\OptionsCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\Commands\PlayCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Main\Commands\StopCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppModules\Tracer\Commands\ClearTraceCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ProjectParameters.cs" />
+    <Compile Include="AppConstants\AppConstants.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="DataStorage\StorageCanTxItem.cs" />
+    <Compile Include="TextResource.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextResource.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TextResource.hu-HU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextResource.hu-HU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UnitTest\UnitTest_Culuture.cs" />
+    <Compile Include="UnitTest\UnitTest_INotifyPropertyChanged.cs" />
+    <Compile Include="AppModules\Statistics\Adapter\TreeNodes\DropTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Adapter\TreeNodes\ErrorTreeNode.cs" />
+    <Compile Include="AppModules\Filter\TreeNodes\FiltersTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\TreeNodes\MsgDataTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\TreeNodes\MsgDeltaMaxTimeTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\TreeNodes\MsgDeltaMinTimeTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\TreeNodes\MsgLastTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Adapter\TreeNodes\ReceivedTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Adapter\TreeNodes\TransmittedTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\TreeNodes\MsgUpdateTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\TreeNodes\MsgTypeTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\TreeNodes\MsgDirectionTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\TreeNodes\MsgCountTimeTreeNode.cs" />
+    <Compile Include="AppModules\CanTx\View\SenderGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\CanTx\View\SenderGridView.Designer.cs">
+      <DependentUpon>SenderGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Statistics\Adapter\Model\RunTimeStatisticsService.cs" />
+    <Compile Include="AppModules\Statistics\Adapter\TreeNodes\TotalTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Adapter\TreeNodes\PendingTreeNode.cs" />
+    <Compile Include="AppModules\Adapters\TreeNodes\ProjectTopTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\TreeNodes\MsgArbitrationIdTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\TreeNodes\MsgNameTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\TreeNodes\MsgPeriodTimeTreeNode.cs" />
+    <Compile Include="AppModules\Statistics\Message\TreeNodes\MessagesTreeNode.cs" />
+    <Compile Include="AppModules\Workspace\View\WorkspaceItemView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Workspace\View\WorkspaceItemView.Designer.cs">
+      <DependentUpon>WorkspaceItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Tracer\View\TraceGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Tracer\View\TraceGridView.Designer.cs">
+      <DependentUpon>TraceGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\ArbitrationIdConverter.cs" />
+    <Compile Include="Converters\DataFrameConverter.cs" />
+    <Compile Include="DataStorage\Storage.cs" />
+    <Compile Include="AppModules\CanTx\Model\CanTxMessageCollection.cs" />
+    <Compile Include="AppModules\Tracer\Model\MessageTraceCollection.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AppModules\Workspace\View\WorkspaceView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppModules\Workspace\View\WorkspaceView.Designer.cs">
+      <DependentUpon>WorkspaceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppModules\Tracer\Model\MessageTraceItem.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="UnitTest\UintTest_ProjectFile.cs" />
+    <Compile Include="UnitTest\UnitTest_Therard.cs" />
+    <Compile Include="UnitTest\UnitTest_TypeConverter.cs" />
+    <Compile Include="UnitTest\UnitTest_StringFormatting.cs" />
+    <EmbeddedResource Include="AppModules\AppDiag\View\AppDiagnosticsView.resx">
+      <DependentUpon>AppDiagnosticsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Baudrate\BaurateEditorForm.en-US.resx">
+      <DependentUpon>BaurateEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Baudrate\BaurateEditorForm.hu-HU.resx">
+      <DependentUpon>BaurateEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Baudrate\BaurateEditorForm.resx">
+      <DependentUpon>BaurateEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Baudrate\View\BaudrateEditorView.en-US.resx">
+      <DependentUpon>BaudrateEditorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Baudrate\View\BaudrateEditorView.hu-HU.resx">
+      <DependentUpon>BaudrateEditorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Baudrate\View\BaudrateEditorView.resx">
+      <DependentUpon>BaudrateEditorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Tools\View\NewForm.resx">
+      <DependentUpon>NewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Tools\View\RenameForm.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Filter\View\FiltersGridView.resx">
+      <DependentUpon>FiltersGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Export\View\CsvOptionsView.en-US.resx">
+      <DependentUpon>CsvOptionsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Export\View\CsvOptionsView.hu-HU.resx">
+      <DependentUpon>CsvOptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Export\View\ExportForm.en-US.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Export\View\ExportForm.hu-HU.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Export\View\XlsxOptionsView.en-US.resx">
+      <DependentUpon>XlsxOptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Export\View\XlsxOptionsView.hu-HU.resx">
+      <DependentUpon>XlsxOptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Export\View\XmlOptionsView.resx">
+      <DependentUpon>XmlOptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Export\View\CsvOptionsView.resx">
+      <DependentUpon>CsvOptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Export\View\ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Main\View\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Main\View\SaveAsProjectForm.en-US.resx">
+      <DependentUpon>SaveAsProjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Main\View\SaveAsProjectForm.hu-HU.resx">
+      <DependentUpon>SaveAsProjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\OptionsForm.en-US.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\OptionsForm.hu-HU.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\AboutView.en-US.resx">
+      <DependentUpon>AboutView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\AboutView.hu-HU.resx">
+      <DependentUpon>AboutView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\AboutView.resx">
+      <DependentUpon>AboutView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\ProjectlCustomArbIdColumnsView.resx">
+      <DependentUpon>ProjectlCustomArbIdColumnsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\ProjectFuctionsView.en-US.resx">
+      <DependentUpon>ProjectFuctionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\ProjectFuctionsView.hu-HU.resx">
+      <DependentUpon>ProjectFuctionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\ProjectFuctionsView.resx">
+      <DependentUpon>ProjectFuctionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\DeveloperView.en-US.resx">
+      <DependentUpon>DeveloperView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\DeveloperView.hu-HU.resx">
+      <DependentUpon>DeveloperView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\DeveloperView.resx">
+      <DependentUpon>DeveloperView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\GeneralView.en-US.resx">
+      <DependentUpon>GeneralView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\GeneralView.hu-HU.resx">
+      <DependentUpon>GeneralView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\GeneralView.resx">
+      <DependentUpon>GeneralView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\NavigatorTreeView.resx">
+      <DependentUpon>NavigatorTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\ProjectRepresentationView.en-US.resx">
+      <DependentUpon>ProjectRepresentationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\ProjectRepresentationView.hu-HU.resx">
+      <DependentUpon>ProjectRepresentationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\ProjectRepresentationView.resx">
+      <DependentUpon>ProjectRepresentationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\ProjectView.en-US.resx">
+      <DependentUpon>ProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\ProjectView.hu-HU.resx">
+      <DependentUpon>ProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Options\View\ProjectView.resx">
+      <DependentUpon>ProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Statistics\Message\View\StatisticsGridView.resx">
+      <DependentUpon>StatisticsGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateMessage\CreateMessage.resx">
+      <DependentUpon>CreateMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Log\View\LogView.resx">
+      <DependentUpon>LogView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Log\View\LogDescriptionEditorForm.resx">
+      <DependentUpon>LogDescriptionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Log\View\LogDescriptionView.resx">
+      <DependentUpon>LogDescriptionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Export\View\XlsxOptionsView.resx">
+      <DependentUpon>XlsxOptionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Log\View\RenameForm.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Main\View\TraceSenderView.resx">
+      <DependentUpon>TraceSenderView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextResource.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextResource.en-US.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextResource.hu-HU.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextResource.hu-HU.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Log\View\LogGridView.resx">
+      <DependentUpon>LogGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Main\View\SelectAdapterForm.resx">
+      <DependentUpon>SelectAdapterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ErrorHandlerForm.resx">
+      <DependentUpon>ErrorHandlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Main\View\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Main\View\SaveAsProjectForm.resx">
+      <DependentUpon>SaveAsProjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\CanTx\View\SenderGridView.resx">
+      <DependentUpon>SenderGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Workspace\View\WorkspaceItemView.resx">
+      <DependentUpon>WorkspaceItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppModules\Tracer\View\TraceGridView.resx">
+      <DependentUpon>TraceGridView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="AppModules\Workspace\View\WorkspaceView.resx">
+      <DependentUpon>WorkspaceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SizeHorizontal32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loop48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loop16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loop24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resistor16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resistor24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HamburgerMenu24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HamburgerMenu16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HamburgerMenu48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email_Delete24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewMessage24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAs48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Listen16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OneFinger16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavigateDown16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavigateUp16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppAddRemove.ico" />
+    <Content Include="Properties\AutoVersionUpdater.txt">
+      <DependentUpon>VersionUpdater.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <Content Include="Properties\VersionUpdater.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AutoVersionUpdater.txt</LastGenOutput>
+    </Content>
+    <None Include="Resources\hummer24.png" />
+    <None Include="Resources\fullscreen16.png" />
+    <None Include="Resources\fullscreen24.png" />
+    <None Include="Resources\fullscreen32.png" />
+    <None Include="Resources\Lum DeviceNet.png" />
+    <None Include="Resources\devicenet32.png" />
+    <None Include="Resources\canbus24.png" />
+    <None Include="Resources\table24.png" />
+    <None Include="Resources\rename24.png" />
+    <None Include="Resources\New_24x24.png" />
+    <None Include="Resources\FilterFilled16.png" />
+    <None Include="Resources\FilterClear16.png" />
+    <None Include="Resources\Filter24.png" />
+    <None Include="Resources\Cut_24x24.png" />
+    <None Include="Resources\Copy_24x24.png" />
+    <None Include="Resources\Paste_24x24.png" />
+    <None Include="Resources\WindowsTurnOff32x32.png" />
+    <None Include="Resources\Save_32x32.png" />
+    <None Include="Resources\CanTimeSegments.png" />
+    <None Include="Resources\KNV_Logo_H70pixel.PNG" />
+    <None Include="Resources\Design.png" />
+    <None Include="Resources\KNV Bt.JPG" />
+    <None Include="Resources\408656.jpg" />
+    <None Include="Resources\connector16.png" />
+    <None Include="Resources\dictionary64.png" />
+    <None Include="Resources\dictionary48.png" />
+    <None Include="Resources\article16x16.png" />
+    <None Include="Resources\article24x24.png" />
+    <None Include="Resources\virtual_adapter128.png" />
+    <None Include="Resources\adapter.png" />
+    <None Include="Resources\shopping_cart16x16.png" />
+    <None Include="Resources\Save_16x161.png" />
+    <None Include="Resources\Save_24x24.png" />
+    <None Include="Resources\Save_16x16.png" />
+    <None Include="Resources\rename16.png" />
+    <None Include="Resources\refresh16.png" />
+    <None Include="Resources\database16.png" />
+    <None Include="Resources\excel48.png" />
+    <None Include="Resources\Delete_16x16.png" />
+    <None Include="Resources\RightArrow16.png" />
+    <None Include="Resources\switchoff16.png" />
+    <None Include="Resources\switchon16.png" />
+    <None Include="Resources\watch16.png" />
+    <None Include="Resources\data16.png" />
+    <None Include="Resources\stats_visible.gif" />
+    <None Include="Resources\stats_min.gif" />
+    <None Include="Resources\stats_max.gif" />
+    <None Include="Resources\stats_hidden.gif" />
+    <None Include="Resources\mail16.png" />
+    <None Include="Resources\id16.png" />
+    <None Include="Resources\trash16.png" />
+    <None Include="Resources\Sandglass16.png" />
+    <None Include="Resources\Warning16.png" />
+    <None Include="Resources\mails24.png" />
+    <None Include="Resources\mails16.png" />
+    <None Include="Resources\Refresh_16x16.png" />
+    <None Include="Resources\Statistics16.png" />
+    <None Include="Resources\counter16.png" />
+    <None Include="Resources\l_clock.gif" />
+    <None Include="Resources\Sync16.png" />
+    <None Include="Resources\arrow_up.gif" />
+    <None Include="Resources\arrow_down.gif" />
+    <None Include="Resources\stats_0.gif" />
+    <None Include="Resources\Mail_16x16.png" />
+    <None Include="Resources\Synchronize_16x161.png" />
+    <None Include="Resources\Synchronize_16x16.png" />
+    <None Include="Resources\Delete_24x24.png" />
+    <None Include="Resources\Previous_48x48.png" />
+    <None Include="Resources\LeftArrow16.png" />
+    <None Include="Resources\log48.png" />
+    <None Include="Resources\log241.png" />
+    <None Include="Resources\Filter16.png" />
+    <None Include="Resources\log24.png" />
+    <None Include="Resources\log16.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Scroll16.png" />
+    <None Include="Resources\SizeHorizontal16.png" />
+    <None Include="Resources\Warning48.png" />
+    <None Include="Resources\Warning32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Konvolucio.MCAN120803\Konvolucio.MCAN120803.API.csproj">
+      <Project>{c6630f54-75cf-4b1e-8366-a2d6cb0d227b}</Project>
+      <Name>Konvolucio.MCAN120803.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Konvolucio.WinForms.Framework\Konvolucio.WinForms.Framework.csproj">
+      <Project>{c3ca7147-853f-4316-99e6-8d2831a299c8}</Project>
+      <Name>Konvolucio.WinForms.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AppModules\Options\PrintTable\" />
+    <Folder Include="AppModules\Tools\UnitTest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath> 
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" /> 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+
+</Project>

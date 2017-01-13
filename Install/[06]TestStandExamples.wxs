@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+
+    <!-- This is how we include wxi files -->
+    <?include $(sys.CURRENTDIR)Config.wxi ?>
+    
+    <!-- Directory Sturcture -->
+    <DirectoryRef Id="MyDocAppFolder">
+      <Directory Id="ExMCAN120803TsFolder" Name="TestStand 2010 SP1 Examples"/>
+    </DirectoryRef>
+
+    <ComponentGroup Id="TestStandExamples2010_Components">
+      <!-- TestStand 2010 SP1 Examples -->
+      <Component Id="ExamplesTsFolder" Directory="ExMCAN120803TsFolder" Guid="{5E693E6A-9C63-4573-BB55-676A45A774B5}">
+        <File Id = "_1001_TS_MCAN120803" Source="$(var.TestStand2010Directory)\Konvolucio MCAN120803 .NET Adapter Sample.seq" KeyPath="no" Checksum="yes"/>
+        <File Id = "_1002_TS_MCAN120803" Source="$(var.TestStand2010Directory)\Konvolucio MCAN120803 LabView Adapter Sample.seq" KeyPath="no" Checksum="yes"/>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

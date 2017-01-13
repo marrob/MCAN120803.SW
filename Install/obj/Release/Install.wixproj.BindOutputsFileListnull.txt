@@ -1,0 +1,2 @@
+D:\@@@!ProjectS\MCAN120803\Software\Install\bin\Release\Install.msi
+D:\@@@!ProjectS\MCAN120803\Software\Install\bin\Release\Install.wixpdb

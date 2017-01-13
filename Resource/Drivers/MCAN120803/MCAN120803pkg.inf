@@ -1,0 +1,108 @@
+[Version]
+Signature = "$Windows NT$"
+;Class csak a telepitoben latszik
+Class = AdaptersDeviceClass
+;ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171}
+ClassGuid={79F02984-6971-436D-A251-896DEE854049}
+Provider = %ProviderName%
+CatalogFile=MCAN120803.cat
+DriverVer=11/23/2015,1.0.0.0
+
+; ================== Class section ==================
+
+[ClassInstall32]
+Addreg=MyDeviceClassReg
+
+[MyDeviceClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-1
+
+; ========== Manufacturer/Models sections ===========
+
+[Manufacturer]
+%ProviderName% = MyDevice_WinUSB,NTx86,NTamd64,NTia64
+
+[MyDevice_WinUSB.NTx86]
+%USB\MyDevice.DeviceDesc% =MCAN120803_UsbDevice, USB\VID_9000&PID_900A
+
+[MyDevice_WinUSB.NTamd64]
+%USB\MyDevice.DeviceDesc% =MCAN120803_UsbDevice, USB\VID_9000&PID_900A
+
+[MyDevice_WinUSB.NTia64]
+%USB\MyDevice.DeviceDesc% =MCAN120803_UsbDevice, USB\VID_9000&PID_900A
+; =================== Installation ===================
+
+;[1]
+[MCAN120803_UsbDevice]
+Include=winusb.inf
+Needs=WINUSB.NT
+
+;[2]
+[MCAN120803_UsbDevice.Services]
+Include=winusb.inf
+AddService=WinUSB,0x00000002,WinUSB_ServiceInstall
+
+;[3]
+[WinUSB_ServiceInstall]
+DisplayName     = %WinUSB_SvcDesc%
+ServiceType     = 1
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %12%\WinUSB.sys
+
+;[4]
+[MCAN120803_UsbDevice.Wdf]
+KmdfService=WINUSB, WinMCAN120803_UsbDevice
+
+[WinMCAN120803_UsbDevice]
+KmdfLibraryVersion=1.9
+
+;[5]
+[MCAN120803_UsbDevice.HW]
+AddReg=Dev_AddReg
+
+[Dev_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{AA40624D-0F4B-4F4F-8E23-BA4209EE3AF2}"
+
+;[6]
+[MCAN120803_UsbDevice.CoInstallers]
+AddReg=CoInstallers_AddReg
+CopyFiles=CoInstallers_CopyFiles
+
+[CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"WdfCoInstaller01009.dll,WdfCoInstaller","winusbcoinstaller2.dll"
+
+[CoInstallers_CopyFiles]
+winusbcoinstaller2.dll
+WdfCoInstaller01009.dll
+
+[DestinationDirs]
+CoInstallers_CopyFiles=11
+
+; ================= Source Media Section =====================
+;[7]
+
+[SourceDisksNames]
+1 = %DISK_NAME%,,,\x86
+2 = %DISK_NAME%,,,\amd64
+3 = %DISK_NAME%,,,\ia64
+
+[SourceDisksFiles.x86]
+winusbcoinstaller2.dll=1
+WdfCoInstaller01009.dll=1
+
+[SourceDisksFiles.amd64]
+winusbcoinstaller2.dll=2
+WdfCoInstaller01009.dll=2
+
+[SourceDisksFiles.ia64]
+winusbcoinstaller2.dll=3
+WdfCoInstaller01009.dll=3
+; =================== Strings ===================
+
+[Strings]
+ProviderName="Konvolucio"
+USB\MyDevice.DeviceDesc="CAN Bus Adapter - MCAN120803"
+WinUSB_SvcDesc="WinUSB driver for MCAN120803"
+DISK_NAME="First Install Disk"
+ClassName="Adapters"

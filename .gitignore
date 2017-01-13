@@ -1,0 +1,7 @@
+Application/*/obj/
+Application/*/bin/
+Install/bin/
+Install/bin/
+.vs/
+*.suo
+.vs/Konvolucio.MCAN120803_VS2015/v14/.suo

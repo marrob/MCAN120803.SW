@@ -1,0 +1,39 @@
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Example_0006.Loopback.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Example_0006.Loopback.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Konvolucio.MCAN120803.API.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Konvolucio.MCAN120803.API.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Konvolucio.WinUSB.xml
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\obj\x86\Release\Example_0006.Loopback.csprojResolveAssemblyReference.cache
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\obj\x86\Release\Example_0006.Loopback.exe
+D:\@@@!ProjectS\MCAN120803V00\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\obj\x86\Release\Example_0006.Loopback.pdb
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Example_0006.Loopback.exe
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Example_0006.Loopback.pdb
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Konvolucio.MCAN120803.API.dll
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Konvolucio.MCAN120803.API.pdb
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\Konvolucio.WinUSB.xml
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\bin\Release\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\obj\x86\Release\Example_0006.Loopback.csprojResolveAssemblyReference.cache
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\obj\x86\Release\Example_0006.Loopback.exe
+D:\@@@!ProjectS\MCAN120803\Software\.NET\Konvolucio.MCAN120803.API.Examples\Example_0006.Loopback\obj\x86\Release\Example_0006.Loopback.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\obj\x86\Release\Example_0006.Loopback.exe
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\obj\x86\Release\Example_0006.Loopback.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\bin\Release\Example_0006.Loopback.exe
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\bin\Release\Example_0006.Loopback.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\bin\Release\Konvolucio.MCAN120803.API.dll
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\bin\Release\Konvolucio.WinUSB.dll
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\bin\Release\nunit.framework.dll
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\bin\Release\nunit.framework.xml
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\bin\Release\UnitTest.nunit
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\bin\Release\Konvolucio.MCAN120803.API.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\bin\Release\Konvolucio.WinUSB.pdb
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\bin\Release\Konvolucio.WinUSB.xml
+D:\@@@!ProjectS\MCAN120803\Software\Csharp .NET4.0 Examples\Example_0006.Loopback\obj\x86\Release\Example_0006.Loopback.csprojResolveAssemblyReference.cache

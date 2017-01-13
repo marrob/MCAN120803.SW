@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Program Files\NUnit.org\framework\3.4.1.0\net-4.0\nunit.framework.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\@@@!ProjectS\MCAN120803\Software\Application\Konvolucio.MCAN120803.GUI\bin\Debug\EPPlus.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=48011477E31C4508A9F405656894228B/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=48011477E31C4508A9F405656894228B/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=48011477E31C4508A9F405656894228B/Name/@EntryValue">_0001</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=48011477E31C4508A9F405656894228B/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;e Id="Konvolucio.MCAN120803.GUI.UnitTest.UintTest_Cast" Project="056B5BF1-4665-497F-B60D-6217F0E60AD4" Provider="nUnit" /&gt;&lt;e Id="Konvolucio.MCAN120803.GUI.UnitTest.UintTest_Cast._0003_" Project="056B5BF1-4665-497F-B60D-6217F0E60AD4" Provider="nUnit" /&gt;&lt;e Id="Konvolucio.MCAN120803.GUI.UnitTest.UintTest_Cast._0004_" Project="056B5BF1-4665-497F-B60D-6217F0E60AD4" Provider="nUnit" /&gt;&lt;/Session&gt;</s:String>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=4B5E0D5B218A432EB7AB7B7EE8292362/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=4B5E0D5B218A432EB7AB7B7EE8292362/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=4B5E0D5B218A432EB7AB7B7EE8292362/Name/@EntryValue">_0001_Send</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=4B5E0D5B218A432EB7AB7B7EE8292362/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;e Id="Konvolucio.MCAN120803.GUI.UnitTest.UintTest_Email._0001_Send" Project="056B5BF1-4665-497F-B60D-6217F0E60AD4" Provider="nUnit" /&gt;&lt;e Id="Konvolucio.MCAN120803.GUI.UnitTest.UintTest_Email" Project="056B5BF1-4665-497F-B60D-6217F0E60AD4" Provider="nUnit" /&gt;&lt;/Session&gt;</s:String></wpf:ResourceDictionary>

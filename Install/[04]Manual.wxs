@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+    <ComponentGroup Id ="Manual_Components" Directory="AppManualFolder">
+      <Component Id="UserManual" Guid="{8970008F-69EE-48D7-8DFD-DFD93685B423}">
+        <File Id = "_Manual.pdf" Source="..\Resource\Doc\Fehlasználói kézikönyv CAN Adapter MCAN120803.pdf" KeyPath="yes" Checksum="yes">
+          <Shortcut Id="ManualStartMenuShortcut" Directory="MCAN120803AppProgramsFolder" Icon="PDF.ico" WorkingDirectory="AppFolder" Name="Fehlasználói kézikönyv" Advertise="yes" />
+        </File>
+      </Component>
+      <!--<Component Id ="Schematic" Guid="{3DAF47D2-2E6A-4EFF-824B-E39EA504E8DE}">
+        <File Id ="_Schematic.pdf" Source ="..\Resource\Doc\FLD_Test_Bench_Schematic.pdf" KeyPath="yes" Checksum="yes">
+          <Shortcut Id="ManualSchemaic" Directory="AppProgramsFolder" Icon="PDF.ico" WorkingDirectory="AppFolder" Name="FLD Test Bench Schematic" Advertise="yes" />
+        </File>
+      </Component>-->
+    </ComponentGroup>
+	</Fragment>
+</Wix>

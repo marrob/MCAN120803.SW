@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3CA7147-853F-4316-99E6-8D2831A299C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Konvolucio.WinForms.Framework</RootNamespace>
+    <AssemblyName>Konvolucio.WinForms.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\NUnit.org\framework\3.4.1.0\net-4.0\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CollectionExtensions\CollectionTools.cs" />
+    <Compile Include="CollectionExtensions\ListChangingEventHandler.cs" />
+    <Compile Include="CollectionExtensions\SafeQueue.cs" />
+    <Compile Include="CollectionExtensions\UnitTest\UintTest_MessageName.cs" />
+    <Compile Include="CultureService.cs" />
+    <Compile Include="CultureText.cs" />
+    <Compile Include="DataGridViewControl\CommandsBase\KnvDataGridViewCutRowsBaseCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\CommandsBase\KnvDataGridViewPasteRowsBaseCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\KnvExtensions\ColumnHeaderContextMenu.cs" />
+    <Compile Include="DataGridViewControl\KnvExtensions\DataGridViewExtensions.cs" />
+    <Compile Include="DataGridViewControl\IRowReOredable.cs" />
+    <Compile Include="DataGridViewControl\KnvDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\KnvExtensions\NewRowAlwaysShow.cs" />
+    <Compile Include="DataGridViewControl\KnvExtensions\ShowContextMenuStripOnTable.cs" />
+    <Compile Include="DataGridViewControl\CommandsBase\KnvDataGridViewDeleteRowsBaseCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\CommandsBase\KnvDataGridViewNewRowBaseCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\CommandsBase\KnvDataGridViewCopyRowsBaseCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\Commands\CutRowsCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\Commands\PasteRowsCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\Commands\CopyRowCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\Commands\NewPersonForPositionCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\Commands\NewPersonCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\Commands\DeleteRowCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\Commands\NewRowCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\View\SingleGridForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\View\SingleGridForm.Designer.cs">
+      <DependentUpon>SingleGridForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\View\DualGridForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\View\DualGridForm.Designer.cs">
+      <DependentUpon>DualGridForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\Models\PersonCollection.cs" />
+    <Compile Include="DataGridViewControl\UnitTest\Models\PersonItem.cs" />
+    <Compile Include="DataGridViewControl\UnitTest\UnitTest_DataGridView.cs" />
+    <Compile Include="DataGridViewControl\UnitTest\View\INewPersonForm.cs" />
+    <Compile Include="DataGridViewControl\UnitTest\View\NewPersonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\View\NewPersonForm.Designer.cs">
+      <DependentUpon>NewPersonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\View\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataGridViewControl\UnitTest\View\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\UserAction.cs" />
+    <Compile Include="Layout\ColumnLayoutItem.cs" />
+    <Compile Include="Layout\ColumnLayoutCollection.cs" />
+    <Compile Include="Layout\IUiLayoutRestoring.cs" />
+    <Compile Include="MultiPage\MultiPageItem.cs" />
+    <Compile Include="MultiPage\KnvMultiPageStripView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MultiPage\MultiPageCollection.cs" />
+    <Compile Include="MultiPage\KnvMultiPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultiPage\KnvMultiPageView.Designer.cs">
+      <DependentUpon>KnvMultiPageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPage\PageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\Commands\DeleteAllNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\Commands\DeleteNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\DemoPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\DemoPage.Designer.cs">
+      <DependentUpon>DemoPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\INewForm.cs" />
+    <Compile Include="MultiPage\UnitTest\View\IRenameForm.cs" />
+    <Compile Include="MultiPage\UnitTest\View\NewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\NewForm.Designer.cs">
+      <DependentUpon>NewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\Commands\NewNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\RenameForm.Designer.cs">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\Commands\RenameNodeCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\TreeNodes\TopTreeNode.cs" />
+    <Compile Include="MultiPage\UnitTest\View\UserControlD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\UserControlD.Designer.cs">
+      <DependentUpon>UserControlD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\UserControlC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\UserControlC.Designer.cs">
+      <DependentUpon>UserControlC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\UserControlB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\UserControlB.Designer.cs">
+      <DependentUpon>UserControlB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\UnitTest_MultiPages.cs" />
+    <Compile Include="MultiPage\UnitTest\View\UserControlA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultiPage\UnitTest\View\UserControlA.Designer.cs">
+      <DependentUpon>UserControlA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Porperty\PropertyExtension.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="RichTextBox\KnvRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RichTextBox\RichTextBoxExtensions.cs" />
+    <Compile Include="SplitContainer\KnvSplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextResource.en-US.Designer.cs">
+      <DependentUpon>TextResource.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="TextResource.hu-HU.Designer.cs">
+      <DependentUpon>TextResource.hu-HU.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataGridViewControl\RowReOrdering.cs" />
+    <Compile Include="TreeView\KnvTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeView\TreeViewBuffered.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeView\ITreeViewView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeView\ITreeViewView.Designer.cs">
+      <DependentUpon>ITreeViewView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DataGridViewControl\UnitTest\View\SingleGridForm.resx">
+      <DependentUpon>SingleGridForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridViewControl\UnitTest\View\DualGridForm.resx">
+      <DependentUpon>DualGridForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridViewControl\UnitTest\View\NewPersonForm.resx">
+      <DependentUpon>NewPersonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridViewControl\UnitTest\View\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiPage\KnvMultiPageView.resx">
+      <DependentUpon>KnvMultiPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiPage\UnitTest\View\DemoPage.resx">
+      <DependentUpon>DemoPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiPage\UnitTest\View\NewForm.resx">
+      <DependentUpon>NewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiPage\UnitTest\View\RenameForm.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiPage\UnitTest\View\UserControlD.resx">
+      <DependentUpon>UserControlD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiPage\UnitTest\View\UserControlC.resx">
+      <DependentUpon>UserControlC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiPage\UnitTest\View\UserControlB.resx">
+      <DependentUpon>UserControlB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiPage\UnitTest\View\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiPage\UnitTest\View\UserControlA.resx">
+      <DependentUpon>UserControlA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextResource.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextResource.en-US.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextResource.hu-HU.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextResource.hu-HU.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\ITreeViewView.resx">
+      <DependentUpon>ITreeViewView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataGridViewControl\DatabaseTable16.bmp" />
+    <None Include="Resources\Cut_24x24.png" />
+    <None Include="Resources\Paste_24x24.png" />
+    <None Include="Resources\Copy_24x24.png" />
+    <None Include="Resources\New_24x24.png" />
+    <None Include="Resources\Delete_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MultiPage\CommandsBase\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

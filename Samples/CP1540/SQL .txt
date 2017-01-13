@@ -1,0 +1,13 @@
+select * from messages
+//
+SELECT COUNT(*) FROM Messages WHERE (Direction = "Received")
+
+SELECT COUNT(*) FROM Messages WHERE (Direction = "Transmitted")
+
+UPDATE Messages SET 'Comment' = 'Hello' WHERE 'Id' = 2
+
+SELECT DISTINCT ArbitrationId FROM Messages
+
+SELECT Name FROM Messages WHERE (ArbitrationId = '" + arbId +"') LIMIT 1
+
+SELECT Name FROM Messages WHERE (ArbitrationId = '1512') LIMIT 1
