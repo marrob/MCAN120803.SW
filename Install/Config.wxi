@@ -6,7 +6,7 @@
   <?define BuildNumber  = "28"?> <!-- VS: The default build number increments daily. -->
   <!-- Revision is NOT used by WiX in the upgrade procedure -->
   <!--The default revision number is the number of seconds since midnight local time, divided by 2.-->
-  <?define Revision = "60"?>
+  <?define Revision = "61"?>
   
   <!-- Full version number to display -->
   <?define VersionNumber  = "$(var.MajorVersion).$(var.MinorVersion).$(var.BuildNumber).$(var.Revision)"?>

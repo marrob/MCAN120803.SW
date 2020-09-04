@@ -1,5 +1,4 @@
-﻿
-namespace Konvolucio.MCAN120803.GUI.AppModules.Main.View
+﻿namespace Konvolucio.MCAN120803.GUI.AppModules.Main.View
 {
     using System;
     using System.ComponentModel;
@@ -13,7 +12,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Main.View
     using Statistics.Message.View;
     using Filter.View;
 
-    public interface IMainView: IUiLayoutRestoring
+    public interface IMainView: IWindowLayoutRestoring
     {
         ITraceSenderView TraceAndPagesView { get; }
         ILogView LogView { get; }

@@ -8,7 +8,7 @@
     using Tracer.View;
     using View;
 
-    public interface ITraceSenderView: IUiLayoutRestoring
+    public interface ITraceSenderView: IWindowLayoutRestoring
     {
         ITraceGridView TraceGridView { get; }
         MultiPageCollection Pages { get; }

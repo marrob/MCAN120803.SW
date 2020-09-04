@@ -51,7 +51,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Filter.View
         /// <summary>
         /// Tiltás.
         /// </summary>
-        bool Enabled { get; set; }
+        bool AllowClick { get; set; }
 
         /// <summary>
         /// Csak olvasható vagy sem.

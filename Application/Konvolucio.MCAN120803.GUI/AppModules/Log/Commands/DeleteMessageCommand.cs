@@ -45,7 +45,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Log.Commands
             {
                 try
                 {
-                    _view.LogGrid.Enabled = false;
+                    _view.LogGrid.AllowClick = false;
                     (_view.LogGrid.Source as ILogFileMessageCollection).RemoveSelectedMessage();
                 }
                 catch (Exception ex)
@@ -58,7 +58,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Log.Commands
                 }
                 finally
                 {
-                    _view.LogGrid.Enabled = true;                
+                    _view.LogGrid.AllowClick = true;                
                 }
             }
         }

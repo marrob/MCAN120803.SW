@@ -16,7 +16,7 @@ namespace Konvolucio.WinForms.Framework
     /// LayoutSave metódusokat. És ezeket akkor meghívni amikor már a fő ablak Shown eseménye 
     /// elsült, így biztosítható hogy pixelre pontosan visszaállnak a vezérlők.
     /// </summary>
-    public interface IUiLayoutRestoring
+    public interface IWindowLayoutRestoring
     {
          void LayoutSave();
          void LayoutRestore();

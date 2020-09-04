@@ -10,12 +10,11 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.AppDiag.View
     using System.Linq;
     using System.Text;
     using System.Windows.Forms;
-
     using Properties;
     using WinForms.Framework;
     using Services; /*Culutre*/
 
-    public interface IAppDiagView: IUiLayoutRestoring
+    public interface IAppDiagView: IWindowLayoutRestoring
     {
         int LineCounter { get; }
         void WriteLine(string line);

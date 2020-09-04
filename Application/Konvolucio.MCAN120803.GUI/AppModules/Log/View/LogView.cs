@@ -11,7 +11,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Log.View
     using Properties;
     using WinForms.Framework;
 
-    public interface ILogView: IUiLayoutRestoring
+    public interface ILogView: IWindowLayoutRestoring
     {
         ILogGridView LogGrid { get; }
         ILogDescriptionView DescriptionView { get; }
@@ -36,13 +36,13 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Log.View
                             LogGrid.Source = e.LogFile.Messages;
                             DescriptionView.Content = e.LogFile.Info.Description;
                             DescriptionView.LogName = e.LogFile.Name;
-                            LogGrid.Enabled = true;
+                            LogGrid.AllowClick = true;
                             //LogGrid.TimestampFormat = "HH";
                             break;
                         }
                     case FileChangingType.Loading:
                         {
-                            LogGrid.Enabled = false;
+                            LogGrid.AllowClick = false;
                             LogGrid.Source = null;
                             DescriptionView.Content = "";
                             DescriptionView.LogName = "*";
@@ -50,7 +50,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Log.View
                         }
                     case FileChangingType.LoadCorrupted:
                         {
-                            LogGrid.Enabled = true;
+                            LogGrid.AllowClick = true;
                             LogGrid.Source = null;
                             DescriptionView.Content = "";
                             DescriptionView.LogName = "Loading Corrupted... Please try again.";
@@ -58,7 +58,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Log.View
                         }
                     case FileChangingType.UnLoadComplete:
                         {
-                            LogGrid.Enabled = true;
+                            LogGrid.AllowClick = true;
                             LogGrid.Source = null;
                             DescriptionView.Content = "";
                             DescriptionView.LogName = "*";

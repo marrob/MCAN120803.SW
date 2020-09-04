@@ -57,7 +57,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Statistics.Message
                         {
                             project = e1.Storage;
 
-                            gridView.Enabled = true;
+                            gridView.AllowClick = true;
 
                             gridView.GridLayout = e1.Storage.StatisticsGridLayout;
 

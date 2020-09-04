@@ -16,3 +16,5 @@ obj\Debug\Install.wixproj.BindOutputsFileListnull.txt
 obj\Debug\Install.wixproj.BindBuiltOutputsFileListnull.txt
 D:\@@@!ProjectS\MCAN120803\Software\Software.Setup\Install\bin\Debug\Install.msi
 D:\@@@!ProjectS\MCAN120803\Software\Software.Setup\Install\bin\Debug\Install.wixpdb
+D:\@@@!ProjectS\MCAN120803\Software\Install\bin\Debug\Install.msi
+D:\@@@!ProjectS\MCAN120803\Software\Install\bin\Debug\Install.wixpdb

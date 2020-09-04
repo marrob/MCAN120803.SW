@@ -135,7 +135,7 @@
     <Compile Include="Dialogs\UserAction.cs" />
     <Compile Include="Layout\ColumnLayoutItem.cs" />
     <Compile Include="Layout\ColumnLayoutCollection.cs" />
-    <Compile Include="Layout\IUiLayoutRestoring.cs" />
+    <Compile Include="Layout\IWindowLayoutRestoring.cs" />
     <Compile Include="MultiPage\MultiPageItem.cs" />
     <Compile Include="MultiPage\KnvMultiPageStripView.cs">
       <SubType>Component</SubType>
@@ -240,12 +240,6 @@
     <Compile Include="TreeView\TreeViewBuffered.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="TreeView\ITreeViewView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="TreeView\ITreeViewView.Designer.cs">
-      <DependentUpon>ITreeViewView.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DataGridViewControl\UnitTest\View\SingleGridForm.resx">
       <DependentUpon>SingleGridForm.cs</DependentUpon>
@@ -296,9 +290,6 @@
       <LastGenOutput>TextResource.hu-HU.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="TreeView\ITreeViewView.resx">
-      <DependentUpon>ITreeViewView.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -333,6 +324,7 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

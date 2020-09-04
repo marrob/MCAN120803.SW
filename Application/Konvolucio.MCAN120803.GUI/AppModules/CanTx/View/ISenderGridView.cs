@@ -10,7 +10,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.CanTx.View
     /// <summary>
     /// TODO: Update summary.
     /// </summary>
-    public interface ISenderGridView : IUiLayoutRestoring, IExportableTableObject
+    public interface ISenderGridView : IWindowLayoutRestoring, IExportableTableObject
     {
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.CanTx.View
         /// <summary>
         /// Tiltás.
         /// </summary>
-        bool Enabled { get; set; }
+        bool AllowClick { get; set; }
 
         /// <summary>
         /// Csak olvasható vagy sem.

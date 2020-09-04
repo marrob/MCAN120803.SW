@@ -130,6 +130,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Log.View
             }
         }
 
+        public bool AllowClick { get; set; }
 
         private readonly CustomArbIdToDataGridView _arbIdToDataGridView;
 

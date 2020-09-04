@@ -8,7 +8,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Main.View
     using Properties;
     using WinForms.Framework;
 
-    public interface IMainForm: IUiLayoutRestoring
+    public interface IMainForm: IWindowLayoutRestoring
     {
         event FormClosedEventHandler FormClosed;
         event FormClosingEventHandler FormClosing;
@@ -171,3 +171,4 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Main.View
         }
     }
 }
+

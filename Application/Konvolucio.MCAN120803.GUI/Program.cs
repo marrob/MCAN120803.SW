@@ -79,7 +79,7 @@ namespace Konvolucio.MCAN120803.GUI
     public class SingleInstanceController : WindowsFormsApplicationBase
     {
         App _app;
-
+       
         public SingleInstanceController()
         {
             IsSingleInstance = true;
@@ -563,7 +563,7 @@ namespace Konvolucio.MCAN120803.GUI
         /// </summary>
         private void LogFiles_CollectionLoading(object sender, EventArgs e)
         {
-            EventAggregator.Instance.Publish<LogFileCollectionAppEvent>(new LogFileCollectionAppEvent(_logFiles, FileChangingType.Loading));
+            EventAggregator.Instance.Publish(new LogFileCollectionAppEvent(_logFiles, FileChangingType.Loading));
             /*TODO: Ennek az egyesített TreeView-ban lesz a helye egy EventAggretaorban*/
             _mainForm.MainView.TreeView.Enabled = false;
             Cursor.Current = Cursors.WaitCursor;

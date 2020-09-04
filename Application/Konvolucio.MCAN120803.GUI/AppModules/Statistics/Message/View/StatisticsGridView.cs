@@ -159,6 +159,8 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Statistics.Message.View
             }
         }
 
+        public bool AllowClick { get; set; }
+
         private readonly Timer _refreshTimer;
         private readonly Stopwatch _watch;
         private readonly object _lockObj;

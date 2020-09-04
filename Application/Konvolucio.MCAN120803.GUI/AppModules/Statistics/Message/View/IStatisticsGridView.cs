@@ -45,7 +45,7 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Statistics.Message.View
         /// <summary>
         /// Tiltás.
         /// </summary>
-        bool Enabled { get; set; }
+        bool AllowClick { get; set; }
 
         /// <summary>
         /// Periodikus frissítés időalapja ms egységben.

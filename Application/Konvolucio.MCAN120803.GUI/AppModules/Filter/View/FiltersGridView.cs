@@ -152,6 +152,8 @@ namespace Konvolucio.MCAN120803.GUI.AppModules.Filter.View
             }
         }
 
+        public bool AllowClick { get; set; }
+
         public FiltersGridView()
         {
             InitializeComponent();
