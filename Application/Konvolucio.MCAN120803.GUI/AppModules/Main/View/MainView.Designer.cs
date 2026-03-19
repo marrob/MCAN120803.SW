@@ -58,7 +58,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 1, 3);
-            this.toolStrip1.Size = new System.Drawing.Size(905, 48);
+            this.toolStrip1.Size = new System.Drawing.Size(905, 138);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -66,7 +66,7 @@
             // 
             this.splitContainerMainView.BackColor = System.Drawing.Color.Orange;
             this.splitContainerMainView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerMainView.Location = new System.Drawing.Point(0, 48);
+            this.splitContainerMainView.Location = new System.Drawing.Point(0, 138);
             this.splitContainerMainView.Name = "splitContainerMainView";
             this.splitContainerMainView.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -80,9 +80,9 @@
             // 
             this.splitContainerMainView.Panel2.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainerMainView.Panel2.Controls.Add(this.knvSplitContainer1);
-            this.splitContainerMainView.Size = new System.Drawing.Size(905, 389);
-            this.splitContainerMainView.SplitterDistance = 178;
-            this.splitContainerMainView.SplitterPrecent = 0.46D;
+            this.splitContainerMainView.Size = new System.Drawing.Size(905, 299);
+            this.splitContainerMainView.SplitterDistance = 150;
+            this.splitContainerMainView.SplitterPrecent = 0.5D;
             this.splitContainerMainView.TabIndex = 3;
             this.splitContainerMainView.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainerMainView_SplitterMoved);
             // 
@@ -101,7 +101,7 @@
             // splitContainerMainTree.Panel2
             // 
             this.splitContainerMainTree.Panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.splitContainerMainTree.Size = new System.Drawing.Size(905, 178);
+            this.splitContainerMainTree.Size = new System.Drawing.Size(905, 150);
             this.splitContainerMainTree.SplitterDistance = 226;
             this.splitContainerMainTree.SplitterPrecent = 0.25D;
             this.splitContainerMainTree.TabIndex = 9;
@@ -114,17 +114,15 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(226, 178);
+            this.panel1.Size = new System.Drawing.Size(226, 150);
             this.panel1.TabIndex = 0;
             // 
             // treeView1
             // 
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView1.ImageList = null;
             this.treeView1.Location = new System.Drawing.Point(0, 25);
             this.treeView1.Name = "treeView1";
-            this.treeView1.SelectedNode = null;
-            this.treeView1.Size = new System.Drawing.Size(226, 153);
+            this.treeView1.Size = new System.Drawing.Size(226, 125);
             this.treeView1.TabIndex = 1;
             // 
             // toolStrip2
@@ -151,7 +149,7 @@
             // knvSplitContainer1.Panel2
             // 
             this.knvSplitContainer1.Panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.knvSplitContainer1.Size = new System.Drawing.Size(905, 207);
+            this.knvSplitContainer1.Size = new System.Drawing.Size(905, 145);
             this.knvSplitContainer1.SplitterDistance = 751;
             this.knvSplitContainer1.SplitterPrecent = 0.83D;
             this.knvSplitContainer1.TabIndex = 1;
@@ -161,7 +159,7 @@
             this.appTraceView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.appTraceView1.Location = new System.Drawing.Point(0, 0);
             this.appTraceView1.Name = "appTraceView1";
-            this.appTraceView1.Size = new System.Drawing.Size(751, 207);
+            this.appTraceView1.Size = new System.Drawing.Size(751, 145);
             this.appTraceView1.TabIndex = 0;
             // 
             // MainView
